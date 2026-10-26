@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EVE Verified — T2 Governed Agent Handoff Evidence</title>
+<meta name="description" content="Frozen evidence from one owner-approved test run: two AI agents, one signed mandate, every handoff checked and recorded by EVE. Download the package and verify every file yourself.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f8fa;--white:#fff;--border:#e5e7eb;--text:#111827;--sub:#4b5563;--dim:#6b7280;
+--blue:#1d4ed8;--blue-light:#eff6ff;--blue-border:#bfdbfe;
+--green:#15803d;--green-bg:#f0fdf4;--green-bdr:#bbf7d0;
+--orange:#c2410c;--orange-bg:#fff7ed;--orange-bdr:#fed7aa;
+--indigo:#4338ca;--indigo-bg:#eef2ff;--indigo-bdr:#c7d2fe;
+--navy:#0f172a;--radius:10px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.55;-webkit-font-smoothing:antialiased}
+.mono{font-family:ui-monospace,Menlo,Consolas,monospace}
+a{color:var(--blue)}
+:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+.top{background:var(--navy);border-bottom:1px solid rgba(255,255,255,.08)}
+.top-in{max-width:1000px;margin:0 auto;padding:.7rem 1.5rem;display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap}
+.top .logo{color:#60a5fa;font-weight:800;font-size:.72rem;letter-spacing:.14em;text-decoration:none}
+.top a.nav{color:rgba(255,255,255,.6);text-decoration:none;font-size:.78rem}
+.top a.nav:hover{color:#fff}
+.hero{background:var(--navy);color:#fff;padding:2.6rem 1.5rem 3.2rem;text-align:center}
+.hero .kicker{font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#60a5fa;margin-bottom:.7rem}
+.hero h1{font-size:2.05rem;font-weight:700;letter-spacing:-.025em;margin-bottom:.6rem;line-height:1.2;text-wrap:balance}
+.hero .lead{font-size:1.02rem;font-weight:500;color:rgba(255,255,255,.75);max-width:700px;margin:0 auto 1.3rem;line-height:1.6}
+.hero .boundary-line{display:inline-block;background:rgba(96,165,250,.12);border:1px solid rgba(96,165,250,.32);border-radius:9px;padding:.6rem 1.1rem;font-size:.82rem;font-weight:600;color:#bfdbfe;max-width:760px;line-height:1.6}
+.container{max-width:1000px;margin:0 auto;padding:1.5rem}
+.dl{display:grid;grid-template-columns:repeat(3,1fr);gap:.9rem;margin:-2.4rem 0 1.4rem}
+@media(max-width:820px){.dl{grid-template-columns:1fr;margin-top:-1.6rem}}
+.dlc{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:1rem 1.1rem;box-shadow:0 6px 20px rgba(15,23,42,.09);display:flex;flex-direction:column;gap:.45rem;min-width:0}
+.dlc .h{font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--dim)}
+.dlc .t{font-size:.98rem;font-weight:700}
+.dlc .d{font-size:.78rem;color:var(--sub)}
+.dlc .btn{align-self:flex-start;background:var(--navy);color:#fff;text-decoration:none;font-size:.8rem;font-weight:600;border-radius:7px;padding:.5rem .8rem;margin-top:.2rem}
+.dlc .hash{font-size:.68rem;color:var(--dim);word-break:break-all}
+.section-h{font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);margin:2rem 0 .75rem}
+.card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:1.05rem 1.2rem;margin-bottom:1rem}
+.card-h{font-size:.9rem;font-weight:700;color:var(--navy);margin-bottom:.55rem}
+.card-b{font-size:.82rem;color:var(--sub);line-height:1.65}
+.card-b strong{color:var(--text)}
+.card-b ul{padding-left:1.1rem;display:grid;gap:.35rem}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:.7rem;margin-bottom:1rem}
+@media(max-width:820px){.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.steps{grid-template-columns:1fr}}
+.step{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:.85rem .95rem}
+.step .ph{font-size:.6rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#fff;background:var(--indigo);border-radius:5px;padding:.2rem .5rem;display:inline-block;margin-bottom:.5rem}
+.step p{font-size:.78rem;color:var(--text);line-height:1.5}
+.layers{display:grid;grid-template-columns:repeat(5,1fr);gap:.6rem;margin-bottom:1rem}
+@media(max-width:820px){.layers{grid-template-columns:1fr}}
+.layer{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:.8rem .9rem;display:flex;flex-direction:column;gap:.35rem}
+.layer .k{font-size:.6rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--dim)}
+.layer .t{font-size:.8rem;font-weight:700}
+.layer .d{font-size:.72rem;color:var(--sub)}
+.bdg{font-size:.58rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;border-radius:4px;padding:.16rem .42rem;white-space:nowrap;align-self:flex-start;display:inline-block}
+.bdg.ok{background:var(--green-bg);color:var(--green);border:1px solid var(--green-bdr)}
+.bdg.warn{background:var(--orange-bg);color:var(--orange);border:1px solid var(--orange-bdr)}
+.bdg.off{background:var(--bg);color:var(--dim);border:1px solid var(--border)}
+.bdg.neutral{background:var(--indigo-bg);color:var(--indigo);border:1px solid var(--indigo-bdr)}
+.never{background:var(--blue-light);border:1px solid var(--blue-border);border-radius:var(--radius);padding:.95rem 1.15rem;margin-bottom:1.2rem}
+.never .nh{font-size:.98rem;font-weight:700;color:var(--blue);margin-bottom:.35rem}
+.never .nb{font-size:.8rem;color:#1e40af;line-height:1.65}
+.never ul{padding-left:1.1rem;display:grid;gap:.3rem}
+pre.cmd{background:var(--navy);color:#e2e8f0;border-radius:8px;padding:.8rem 1rem;font-size:.76rem;overflow-x:auto;margin:.5rem 0;line-height:1.6}
+.tbl{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);overflow-x:auto;margin-bottom:1rem}
+table{border-collapse:collapse;width:100%;min-width:760px;font-size:.76rem}
+th,td{text-align:left;padding:.5rem .75rem;border-bottom:1px solid var(--border);vertical-align:top}
+th{font-size:.6rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);background:var(--bg)}
+tr.grp td{background:var(--bg);font-weight:700;font-size:.7rem;letter-spacing:.04em;text-transform:uppercase;color:var(--navy)}
+td.path{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.72rem;word-break:break-all}
+td.path .why{display:block;font-family:'Inter',system-ui,sans-serif;font-size:.7rem;color:var(--dim);margin-top:.2rem;word-break:normal}
+td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+td.hash{font-size:.66rem;color:var(--sub);word-break:break-all;min-width:250px}
+.dim{color:var(--dim);font-weight:500}
+.chk{font-size:.6rem;font-weight:700;margin-left:.35rem}
+.vbtn{font-family:inherit;font-size:.8rem;font-weight:600;border:1px solid var(--navy);background:var(--white);color:var(--navy);border-radius:7px;padding:.5rem .8rem;cursor:pointer}
+#vout{font-size:.78rem;margin-top:.5rem}
+footer{max-width:1000px;margin:0 auto;padding:1rem 1.5rem 2.5rem;font-size:.72rem;color:var(--dim);line-height:1.6}
+</style>
+</head>
+<body>
+<div class="top"><div class="top-in">
+  <a class="logo" href="https://eveverified.com">EVE VERIFIED</a>
+  <a class="nav" href="https://grc.eveverified.com/chain/governed-action">Governed action proof</a>
+  <a class="nav" href="#download">Download</a>
+  <a class="nav" href="#verify">Verify</a>
+  <a class="nav" href="#files">All 48 files</a>
+</div></div>
+
+<header class="hero">
+  <div class="kicker">Evidence package &middot; T2 &middot; 24 October 2026</div>
+  <h1>Two AI agents. One signed mandate. Every handoff on record.</h1>
+  <p class="lead">One owner-approved test run. Agent A drafted a painting quote for a fictional housing cooperative. Agent B reviewed it. EVE admitted each agent, bound each handoff to the signed mandate and recorded every step. The 48 files from the run were frozen the same day. Here they are.</p>
+  <div class="boundary-line">Fictional test data. One run, built and checked by the same producer. Not independently verified.</div>
+</header>
+
+<main class="container">
+  <section class="dl" id="download" aria-label="Downloads">
+    <div class="dlc"><span class="h">Full package</span><span class="t">ZIP, 46 files</span><span class="d">Everything below in one archive, including the checker.</span><a class="btn" href="T2_EVIDENCE_PACKAGE_2026-10-25_final.zip" download>Download ZIP</a><span class="mono hash">SHA-256 0d897da555e63166732a56e6d6d520469f018e5c1a46cf9a2339b7e1f6fed6b3 &middot; 76,201 bytes</span></div>
+    <div class="dlc"><span class="h">Frozen manifest</span><span class="t">48 files, SHA-256 and size</span><span class="d">The list frozen on 24 October. Every file below is checked against it.</span><a class="btn" href="package/public_evidence_T2_2026-10-25_final/original/LGX_C2_T2_EVIDENCE_FREEZE_2026-10-24.md">Open manifest</a><span class="mono hash">SHA-256 f9468fd311a83be92daa0bb0fd013139d0feb5957124e517edce7ccf746d8fef</span></div>
+    <div class="dlc"><span class="h">Checker</span><span class="t">VERIFY_PACKAGE.py</span><span class="d">Python 3, standard library only. No network.</span><a class="btn" href="package/public_evidence_T2_2026-10-25_final/VERIFY_PACKAGE.py">Open script</a><span class="mono hash">Also: <a href="SHA256SUMS.txt">SHA256SUMS.txt</a> for every file on this site</span></div>
+  </section>
+
+  <div class="section-h">What happened</div>
+  <div class="steps">
+    <div class="step"><span class="ph">1 &middot; Mandate</span><p>The owner reviewed the task, typed the mission ID and signed a mandate naming the task, both agents, the model, a 2.00 USD cost cap and a 60-minute window.</p></div>
+    <div class="step"><span class="ph">2 &middot; Agent A</span><p>EVE admitted agent A with exactly the task file. A produced a quote: 96 362.50 SEK including VAT, two requests left unpriced as questions.</p></div>
+    <div class="step"><span class="ph">3 &middot; Handoff</span><p>Before agent B started, EVE checked that the package for B held A's output unchanged, the same task and nothing else.</p></div>
+    <div class="step"><span class="ph">4 &middot; Agent B</span><p>EVE admitted agent B, who reviewed the quote and answered VERDICT: ACCEPT. A replay of the closed handoff was refused.</p></div>
+  </div>
+
+  <div class="section-h">Test status</div>
+  <div class="layers">
+    <div class="layer"><span class="k">L-1 chain</span><span class="t">ALL_PASS, CHAIN_VERIFIED</span><span class="bdg ok">Pass</span><span class="d">15 of 15 checks; verifier FAILS []</span></div>
+    <div class="layer"><span class="k">L-2 work</span><span class="t">Deterministic quote check</span><span class="bdg ok">Pass</span><span class="d">Q1 to Q8; independent of both agents</span></div>
+    <div class="layer"><span class="k">L-3 reviewer</span><span class="t">Agent B: ACCEPT</span><span class="bdg neutral">Agent statement</span><span class="d">Same vendor, separate context</span></div>
+    <div class="layer"><span class="k">L-4 server</span><span class="t">2 of 2 receipts</span><span class="bdg neutral">Client-reported</span><span class="d">Server checked each upload</span></div>
+    <div class="layer"><span class="k">L-5 independent</span><span class="t">Independent verification</span><span class="bdg off">Not established</span><span class="d">No third party has checked this run</span></div>
+  </div>
+  <p class="card-b" style="margin-bottom:1rem">A lower layer never upgrades a higher one. Run cost by Hermes estimate: 0.096508 USD. The cost cap is a stop rule between agent turns, not a hard limit.</p>
+
+  <div class="never">
+    <div class="nh">What this package does not establish</div>
+    <div class="nb"><ul>
+      <li>No independent verification, external audit or certification. The same producer built and checked the run. No external time anchor.</li>
+      <li>G-1 not performed: the mandate signature has not yet been checked against a published owner key. A prepared check, <span class="mono">g1/G1_CHECK.sh</span>, is included. A pass would prove that the signature matches the key, not who controls the key.</li>
+      <li>G-2 not resolved: the run client, server script and chain verifier named in the mandate are not in the package, so the chain checks cannot be re-run from it.</li>
+      <li>The agents' runtime tools and network egress were not established. No network isolation, production safety or hard cost limit is claimed.</li>
+    </ul></div>
+  </div>
+
+  <div class="section-h" id="verify">Verify it yourself</div>
+  <div class="card">
+    <div class="card-h">On your own machine</div>
+    <div class="card-b">
+      <pre class="cmd">unzip T2_EVIDENCE_PACKAGE_2026-10-25_final.zip
+python3 public_evidence_T2_2026-10-25_final/VERIFY_PACKAGE.py
+# expected last line:  RESULT PACKAGE_INTEGRITY_OK</pre>
+      The checker compares every distributed original with the frozen manifest, confirms that withheld files are absent, checks the reading copies by their own hash, and flags any unlisted file. It proves file identity against the manifest text. It does not prove that the manifest is authentic, who produced it, or that any statement inside a file is true.
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-h">In this browser</div>
+    <div class="card-b">Fetches each file linked below from this site and computes its SHA-256 locally.<br><br>
+      <button class="vbtn" id="vbtn" type="button">Check all linked files</button>
+      <div id="vout" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <div class="section-h">Why 46 files in the package and 48 in the manifest</div>
+  <div class="card"><div class="card-b">
+    The <strong>48</strong> are the original files frozen from the run. The <strong>46</strong> are the files in the published package. They overlap in 39 files.
+    <ul style="margin-top:.5rem">
+      <li><strong>39</strong> originals are distributed byte-identical.</li>
+      <li><strong>9</strong> originals are withheld: the main result record (server firewall state and signing detail), the run wrapper script, four isolation-window logs and the environment precheck (server addresses, owner environment, container topology), and two files that are replaced by redacted <strong>reading copies</strong>. Their names, SHA-256 and the reason for withholding are listed below.</li>
+      <li>The package adds <strong>7</strong> files that are not originals: the frozen manifest itself, the 2 reading copies, README.md, VERIFY_PACKAGE.py, g1/G1_CHECK.sh and PUBLICATION_MANIFEST.json.</li>
+    </ul>
+    39 + 7 = 46. A reading copy is never evidence: it carries its own hash and cannot be checked against the frozen manifest.
+  </div></div>
+
+  <div class="section-h" id="files">All 48 frozen files</div>
+  <div class="tbl"><table>
+    <thead><tr><th>Original path</th><th>Status</th><th>Bytes</th><th>SHA-256 (frozen manifest)</th></tr></thead>
+    <tbody>
+<tr class="grp"><td colspan="4">result <span class="dim">(1)</span></td></tr>
+<tr><td class="path">LGX_C2_T2_RESULT_2026-10-24.md<span class="why">main result record: server firewall state after rollback (line 32) and signing-attempt detail (lines 33-34); kept unchanged in the frozen chain (owner decision 2026-10-25)</span></td><td><span class="bdg off">Withheld &middot; security</span></td><td class="num">5,834</td><td class="mono hash" title="0df6fa4a6570a7fbebfa293cdaa3da9944f8fb9ff3035bf29f795ab65db131e2">0df6fa4a6570a7fbebfa293cdaa3da9944f8fb9ff3035bf29f795ab65db131e2</td></tr>
+<tr class="grp"><td colspan="4">work product (agent A) <span class="dim">(6)</span></td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/out/H1/a_out/OFFER_DRAFT.md" data-sha="14215d27c8bc6e77d23d19f647c3bcb21a5393b1ceb9b4e818eeb06c4b679af4" data-bytes="1241">chain02/runs/LGX-T2-QUOTE-20261024T130334Z/out/H1/a_out/OFFER_DRAFT.md</a></td><td><span class="bdg ok">Distributed</span></td><td class="num">1,241</td><td class="mono hash" title="14215d27c8bc6e77d23d19f647c3bcb21a5393b1ceb9b4e818eeb06c4b679af4">14215d27c8bc6e77d23d19f647c3bcb21a5393b1ceb9b4e818eeb06c4b679af4</td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/out/H1/a_out/CALCULATION.csv" data-sha="d9cab3dbcdc46d9c5cdec06f309687f0c719f41a31a2073c4de918df278108ea" data-bytes="548">chain02/runs/LGX-T2-QUOTE-20261024T130334Z/out/H1/a_out/CALCULATION.csv</a></td><td><span class="bdg ok">Distributed</span></td><td class="num">548</td><td class="mono hash" title="d9cab3dbcdc46d9c5cdec06f309687f0c719f41a31a2073c4de918df278108ea">d9cab3dbcdc46d9c5cdec06f309687f0c719f41a31a2073c4de918df278108ea</td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/out/H1/a_out/ASSUMPTIONS_AND_QUESTIONS.md" data-sha="19745abb6f7cea32365763c3e26a15233af38e444b2cd0d595447a241298ae66" data-bytes="1274">chain02/runs/LGX-T2-QUOTE-20261024T130334Z/out/H1/a_out/ASSUMPTIONS_AND_QUESTIONS.md</a></td><td><span class="bdg ok">Distributed</span></td><td class="num">1,274</td><td class="mono hash" title="19745abb6f7cea32365763c3e26a15233af38e444b2cd0d595447a241298ae66">19745abb6f7cea32365763c3e26a15233af38e444b2cd0d595447a241298ae66</td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/out/H1/a_out/RESULT.md" data-sha="b1eaa62787f9537bfd14f60c8840eb11b3ef92472fefd8f27bb2802e7bced935" data-bytes="480">chain02/runs/LGX-T2-QUOTE-20261024T130334Z/out/H1/a_out/RESULT.md</a></td><td><span class="bdg ok">Distributed</span></td><td class="num">480</td><td class="mono hash" title="b1eaa62787f9537bfd14f60c8840eb11b3ef92472fefd8f27bb2802e7bced935">b1eaa62787f9537bfd14f60c8840eb11b3ef92472fefd8f27bb2802e7bced935</td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/out/H1/A_OUT_MANIFEST.sha256" data-sha="aa7a7e47f2f94bab1debba3a0c0e715a703c7d754e4c022965fde0dc1f7ee4e9" data-bytes="334">chain02/runs/LGX-T2-QUOTE-20261024T130334Z/out/H1/A_OUT_MANIFEST.sha256</a></td><td><span class="bdg ok">Distributed</span></td><td class="num">334</td><td class="mono hash" title="aa7a7e47f2f94bab1debba3a0c0e715a703c7d754e4c022965fde0dc1f7ee4e9">aa7a7e47f2f94bab1debba3a0c0e715a703c7d754e4c022965fde0dc1f7ee4e9</td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/out/H1/a_out.tar" data-sha="ae09e4040f52846890e8ed44190172b76255a0ce0f2369bf99950354152ffae5" data-bytes="10240">chain02/runs/LGX-T2-QUOTE-20261024T130334Z/out/H1/a_out.tar</a></td><td><span class="bdg ok">Distributed</span></td><td class="num">10,240</td><td class="mono hash" title="ae09e4040f52846890e8ed44190172b76255a0ce0f2369bf99950354152ffae5">ae09e4040f52846890e8ed44190172b76255a0ce0f2369bf99950354152ffae5</td></tr>
+<tr class="grp"><td colspan="4">review (agent B) <span class="dim">(3)</span></td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/out/H2/a_out/REVIEW.md" data-sha="16537de90f879dc8c8fde34e7bfb1a2051a1b590bbfa2b99e71104e065afbcb6" data-bytes="1420">chain02/runs/LGX-T2-QUOTE-20261024T130334Z/out/H2/a_out/REVIEW.md</a></td><td><span class="bdg ok">Distributed</span></td><td class="num">1,420</td><td class="mono hash" title="16537de90f879dc8c8fde34e7bfb1a2051a1b590bbfa2b99e71104e065afbcb6">16537de90f879dc8c8fde34e7bfb1a2051a1b590bbfa2b99e71104e065afbcb6</td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/out/H2/A_OUT_MANIFEST.sha256" data-sha="c0042cc960159fd1b217c6a13aba76c1199f20ad7f7c023c1969f39f0feb3dfa" data-bytes="76">chain02/runs/LGX-T2-QUOTE-20261024T130334Z/out/H2/A_OUT_MANIFEST.sha256</a></td><td><span class="bdg ok">Distributed</span></td><td class="num">76</td><td class="mono hash" title="c0042cc960159fd1b217c6a13aba76c1199f20ad7f7c023c1969f39f0feb3dfa">c0042cc960159fd1b217c6a13aba76c1199f20ad7f7c023c1969f39f0feb3dfa</td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/out/H2/a_out.tar" data-sha="9145faa2828d8899be1fe1cc34fd5e9a01d70ca7f375f74f7f5f47d5333daae8" data-bytes="10240">chain02/runs/LGX-T2-QUOTE-20261024T130334Z/out/H2/a_out.tar</a></td><td><span class="bdg ok">Distributed</span></td><td class="num">10,240</td><td class="mono hash" title="9145faa2828d8899be1fe1cc34fd5e9a01d70ca7f375f74f7f5f47d5333daae8">9145faa2828d8899be1fe1cc34fd5e9a01d70ca7f375f74f7f5f47d5333daae8</td></tr>
+<tr class="grp"><td colspan="4">mandate and owner approval <span class="dim">(6)</span></td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/evidence/chain02/r2/missions/LGX-T2-QUOTE/MANDATE_LGX-T2-QUOTE-20261024T130334Z.txt" data-sha="4494612f489fb858780906075880900e51181a564d2648be277bca68f942eaab" data-bytes="816">chain02/r2/missions/LGX-T2-QUOTE/MANDATE_LGX-T2-QUOTE-20261024T130334Z.txt</a></td><td><span class="bdg ok">Distributed</span></td><td class="num">816</td><td class="mono hash" title="4494612f489fb858780906075880900e51181a564d2648be277bca68f942eaab">4494612f489fb858780906075880900e51181a564d2648be277bca68f942eaab</td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/evidence/chain02/r2/missions/LGX-T2-QUOTE/MANDATE_LGX-T2-QUOTE-20261024T130334Z.txt.sig" data-sha="633bee9a64969a0bb72fb83b76227884d4aa6265a68dd23287efda9baea13338" data-bytes="310">chain02/r2/missions/LGX-T2-QUOTE/MANDATE_LGX-T2-QUOTE-20261024T130334Z.txt.sig</a></td><td><span class="bdg ok">Distributed</span></td><td class="num">310</td><td class="mono hash" title="633bee9a64969a0bb72fb83b76227884d4aa6265a68dd23287efda9baea13338">633bee9a64969a0bb72fb83b76227884d4aa6265a68dd23287efda9baea13338</td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/evidence/chain02/r2/lgx_c2/T2/T2_OWNER_GO_RECORD.md" data-sha="88e70d0fe04cad9b1ebc8fa04e79ce97f6b9c932972a614eb2648a6bbfb64b43" data-bytes="1765">chain02/r2/lgx_c2/T2/T2_OWNER_GO_RECORD.md</a></td><td><span class="bdg ok">Distributed</span></td><td class="num">1,765</td><td class="mono hash" title="88e70d0fe04cad9b1ebc8fa04e79ce97f6b9c932972a614eb2648a6bbfb64b43">88e70d0fe04cad9b1ebc8fa04e79ce97f6b9c932972a614eb2648a6bbfb64b43</td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/evidence/chain02/r2/lgx_c2/activations/N3R3_ACT_654226842f988bd162a0fcc5add09b152360aac446f77a8ad39e65b47614bc77.md" data-sha="654226842f988bd162a0fcc5add09b152360aac446f77a8ad39e65b47614bc77" data-bytes="1119">chain02/r2/lgx_c2/activations/N3R3_ACT_654226842f988bd162a0fcc5add09b152360aac446f77a8ad39e65b47614bc77.md</a></td><td><span class="bdg ok">Distributed</span></td><td class="num">1,119</td><td class="mono hash" title="654226842f988bd162a0fcc5add09b152360aac446f77a8ad39e65b47614bc77">654226842f988bd162a0fcc5add09b152360aac446f77a8ad39e65b47614bc77</td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/evidence/chain02/r2/lgx_c2/activations/consumed/654226842f988bd162a0fcc5add09b152360aac446f77a8ad39e65b47614bc77/CONSUMED.txt" data-sha="43e2d5a159aa1080909a7fcff1c3af62b7392bd9e173deb84ec154621c9d1e27" data-bytes="164">chain02/r2/lgx_c2/activations/consumed/654226842f988bd162a0fcc5add09b152360aac446f77a8ad39e65b47614bc77/CONSUMED.txt</a></td><td><span class="bdg ok">Distributed</span></td><td class="num">164</td><td class="mono hash" title="43e2d5a159aa1080909a7fcff1c3af62b7392bd9e173deb84ec154621c9d1e27">43e2d5a159aa1080909a7fcff1c3af62b7392bd9e173deb84ec154621c9d1e27</td></tr>
+<tr><td class="path">chain02/r2/lgx_c2/RUN_TASK_LGX_WSL_r4_T2.sh<span class="why">server addresses / owner environment / container topology and egress results (owner decision 2026-10-25)</span></td><td><span class="bdg off">Withheld</span></td><td class="num">40,199</td><td class="mono hash" title="1c945f698397984cb8619eb662160cfdbf6f4dbfc7f84f6de2bd457e7f3ee510">1c945f698397984cb8619eb662160cfdbf6f4dbfc7f84f6de2bd457e7f3ee510</td></tr>
+<tr class="grp"><td colspan="4">mission inputs <span class="dim">(3)</span></td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/evidence/chain02/r2/missions/LGX-T2-QUOTE/TASK.md" data-sha="6d575090fcbfa47a8d050087a3ae93706aae20e8e81659367a03dd4b054c431d" data-bytes="4121">chain02/r2/missions/LGX-T2-QUOTE/TASK.md</a></td><td><span class="bdg ok">Distributed</span></td><td class="num">4,121</td><td class="mono hash" title="6d575090fcbfa47a8d050087a3ae93706aae20e8e81659367a03dd4b054c431d">6d575090fcbfa47a8d050087a3ae93706aae20e8e81659367a03dd4b054c431d</td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/evidence/chain02/r2/missions/LGX-T2-QUOTE/MISSION_HOLD_LIFT.md" data-sha="456652d461549fe1c59e64ea56ec3371bf3d0bf585899f285e363326973338a7" data-bytes="2525">chain02/r2/missions/LGX-T2-QUOTE/MISSION_HOLD_LIFT.md</a></td><td><span class="bdg ok">Distributed</span></td><td class="num">2,525</td><td class="mono hash" title="456652d461549fe1c59e64ea56ec3371bf3d0bf585899f285e363326973338a7">456652d461549fe1c59e64ea56ec3371bf3d0bf585899f285e363326973338a7</td></tr>
+<tr><td class="path">chain02/r2/lgx_c2/T2/T2_SPEC.md<span class="why">Reading copy (not evidence): <a href="package/public_evidence_T2_2026-10-25_final/reading_copies/T2_SPEC.READING_COPY_r2.md">T2_SPEC.READING_COPY_r2.md</a></span><span class="why">agent container network / toolset configuration and a service name; distributed only as a redacted reading copy (owner decision 2026-10-25)</span></td><td><span class="bdg warn">Withheld &middot; reading copy</span></td><td class="num">9,503</td><td class="mono hash" title="8965d91e25e36deb26272ab2d9d4b39b9c8a933f73200b8c5a6ae0b5e3cbd00d">8965d91e25e36deb26272ab2d9d4b39b9c8a933f73200b8c5a6ae0b5e3cbd00d</td></tr>
+<tr class="grp"><td colspan="4">run trace <span class="dim">(10)</span></td></tr>
+<tr><td class="path">chain02/r2/missions/LGX-T2-QUOTE/RUN_LGX-T2-QUOTE-20261024T130334Z.txt<span class="why">Reading copy (not evidence): <a href="package/public_evidence_T2_2026-10-25_final/reading_copies/RUN_LGX-T2-QUOTE-20261024T130334Z.READING_COPY.txt">RUN_LGX-T2-QUOTE-20261024T130334Z.READING_COPY.txt</a></span><span class="why">local key file paths and signing-attempt detail; distributed only as a redacted reading copy (owner decision 2026-10-25)</span></td><td><span class="bdg warn">Withheld &middot; reading copy</span></td><td class="num">12,364</td><td class="mono hash" title="22d43e5cd4e797ffd4dd2e38dd66e1b7117aa6042a81950841319dfb9ea2b627">22d43e5cd4e797ffd4dd2e38dd66e1b7117aa6042a81950841319dfb9ea2b627</td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/evidence/chain02/runs/C2-live-LGX-T2-QUOTE-20261024T130334Z.json" data-sha="02df91531127341c145c04ed2d2821d2337552fb5c86dda981b5ab0120d021f8" data-bytes="16566">chain02/runs/C2-live-LGX-T2-QUOTE-20261024T130334Z.json</a></td><td><span class="bdg ok">Distributed</span></td><td class="num">16,566</td><td class="mono hash" title="02df91531127341c145c04ed2d2821d2337552fb5c86dda981b5ab0120d021f8">02df91531127341c145c04ed2d2821d2337552fb5c86dda981b5ab0120d021f8</td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/link/LINK.json" data-sha="3615753028856a239db86badf96dd9fa98f19c4f97d0cab59362d772e7d826b5" data-bytes="748">chain02/runs/LGX-T2-QUOTE-20261024T130334Z/link/LINK.json</a></td><td><span class="bdg ok">Distributed</span></td><td class="num">748</td><td class="mono hash" title="3615753028856a239db86badf96dd9fa98f19c4f97d0cab59362d772e7d826b5">3615753028856a239db86badf96dd9fa98f19c4f97d0cab59362d772e7d826b5</td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/server_io.log" data-sha="0f2d3024edf8d7d24594af3c8cb27617b68183553b57a2dc1f42466f088daa4e" data-bytes="4820">chain02/runs/LGX-T2-QUOTE-20261024T130334Z/server_io.log</a></td><td><span class="bdg ok">Distributed</span></td><td class="num">4,820</td><td class="mono hash" title="0f2d3024edf8d7d24594af3c8cb27617b68183553b57a2dc1f42466f088daa4e">0f2d3024edf8d7d24594af3c8cb27617b68183553b57a2dc1f42466f088daa4e</td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/pkg/H1/MANIFEST.sha256" data-sha="d90a7154f85f33c936b44f8ed4d4de375c603d0488ab9317cb547ca4645a06a1" data-bytes="159">chain02/runs/LGX-T2-QUOTE-20261024T130334Z/pkg/H1/MANIFEST.sha256</a></td><td><span class="bdg ok">Distributed</span></td><td class="num">159</td><td class="mono hash" title="d90a7154f85f33c936b44f8ed4d4de375c603d0488ab9317cb547ca4645a06a1">d90a7154f85f33c936b44f8ed4d4de375c603d0488ab9317cb547ca4645a06a1</td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/pkg/H1/package.tar" data-sha="7dafc199d898d01b0af7b4f39888c12f230a07c23deac15966446968f3e5dd60" data-bytes="10240">chain02/runs/LGX-T2-QUOTE-20261024T130334Z/pkg/H1/package.tar</a></td><td><span class="bdg ok">Distributed</span></td><td class="num">10,240</td><td class="mono hash" title="7dafc199d898d01b0af7b4f39888c12f230a07c23deac15966446968f3e5dd60">7dafc199d898d01b0af7b4f39888c12f230a07c23deac15966446968f3e5dd60</td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/pkg/H2/MANIFEST.sha256" data-sha="1213a9dd1b2264806154b6c5d7253a89dec97d6113ca0b84c882f45a2b405e77" data-bytes="597">chain02/runs/LGX-T2-QUOTE-20261024T130334Z/pkg/H2/MANIFEST.sha256</a></td><td><span class="bdg ok">Distributed</span></td><td class="num">597</td><td class="mono hash" title="1213a9dd1b2264806154b6c5d7253a89dec97d6113ca0b84c882f45a2b405e77">1213a9dd1b2264806154b6c5d7253a89dec97d6113ca0b84c882f45a2b405e77</td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/pkg/H2/package.tar" data-sha="78c783cc91735d800fca7c100e06cc10f4ee96662424c7a627222bc82c26472b" data-bytes="20480">chain02/runs/LGX-T2-QUOTE-20261024T130334Z/pkg/H2/package.tar</a></td><td><span class="bdg ok">Distributed</span></td><td class="num">20,480</td><td class="mono hash" title="78c783cc91735d800fca7c100e06cc10f4ee96662424c7a627222bc82c26472b">78c783cc91735d800fca7c100e06cc10f4ee96662424c7a627222bc82c26472b</td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/consumed/79abb1472f4dd56ef9e97decaa11dac7e63df41a62e173db9e447ff1b168408d.json" data-sha="5e1cabb02689f79c2719f830edde1efa2a1ffb7c86931f3f1556623bf09f523d" data-bytes="254">chain02/runs/LGX-T2-QUOTE-20261024T130334Z/consumed/79abb1472f4dd56ef9e97decaa11dac7e63df41a62e173db9e447ff1b168408d.json</a></td><td><span class="bdg ok">Distributed</span></td><td class="num">254</td><td class="mono hash" title="5e1cabb02689f79c2719f830edde1efa2a1ffb7c86931f3f1556623bf09f523d">5e1cabb02689f79c2719f830edde1efa2a1ffb7c86931f3f1556623bf09f523d</td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/consumed/9d9b85ef0e27f94727e78fb39dd0f120c667673c9c4db89d5effc4256330de65.json" data-sha="ac53b4fffd6d467b86c75ec03f20be947fa57b344c07fe1bf382d9b4c174cc17" data-bytes="254">chain02/runs/LGX-T2-QUOTE-20261024T130334Z/consumed/9d9b85ef0e27f94727e78fb39dd0f120c667673c9c4db89d5effc4256330de65.json</a></td><td><span class="bdg ok">Distributed</span></td><td class="num">254</td><td class="mono hash" title="ac53b4fffd6d467b86c75ec03f20be947fa57b344c07fe1bf382d9b4c174cc17">ac53b4fffd6d467b86c75ec03f20be947fa57b344c07fe1bf382d9b4c174cc17</td></tr>
+<tr class="grp"><td colspan="4">EVE / VHR records <span class="dim">(10)</span></td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/eve/determination_records.json" data-sha="119e89d64e7a50e0abe5e96a42d18dad5a43a27e0fd780d74594cf3f746938eb" data-bytes="11499">chain02/runs/LGX-T2-QUOTE-20261024T130334Z/eve/determination_records.json</a></td><td><span class="bdg ok">Distributed</span></td><td class="num">11,499</td><td class="mono hash" title="119e89d64e7a50e0abe5e96a42d18dad5a43a27e0fd780d74594cf3f746938eb">119e89d64e7a50e0abe5e96a42d18dad5a43a27e0fd780d74594cf3f746938eb</td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/eve/verified_handoff_v11_records.json" data-sha="4860f171e6e2081d8da9008d00c71fc240611e3c789f32ed6c37b796b50b942f" data-bytes="8407">chain02/runs/LGX-T2-QUOTE-20261024T130334Z/eve/verified_handoff_v11_records.json</a></td><td><span class="bdg ok">Distributed</span></td><td class="num">8,407</td><td class="mono hash" title="4860f171e6e2081d8da9008d00c71fc240611e3c789f32ed6c37b796b50b942f">4860f171e6e2081d8da9008d00c71fc240611e3c789f32ed6c37b796b50b942f</td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/executor/intents/EVE-VHR11-LOCAL-000001.json" data-sha="8fee17d4a5d70aba3490ca50af31014da8c55e6234c21539c82a6ce189b51f04" data-bytes="1217">chain02/runs/LGX-T2-QUOTE-20261024T130334Z/executor/intents/EVE-VHR11-LOCAL-000001.json</a></td><td><span class="bdg ok">Distributed</span></td><td class="num">1,217</td><td class="mono hash" title="8fee17d4a5d70aba3490ca50af31014da8c55e6234c21539c82a6ce189b51f04">8fee17d4a5d70aba3490ca50af31014da8c55e6234c21539c82a6ce189b51f04</td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/executor/intents/EVE-VHR11-LOCAL-000002.json" data-sha="c118560d2f90f395a548c1755b9727306601361eacbad929ca6a3107e0270877" data-bytes="1219">chain02/runs/LGX-T2-QUOTE-20261024T130334Z/executor/intents/EVE-VHR11-LOCAL-000002.json</a></td><td><span class="bdg ok">Distributed</span></td><td class="num">1,219</td><td class="mono hash" title="c118560d2f90f395a548c1755b9727306601361eacbad929ca6a3107e0270877">c118560d2f90f395a548c1755b9727306601361eacbad929ca6a3107e0270877</td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/executor/journals/EVE-VHR11-LOCAL-000001.jsonl" data-sha="9dae2b0e3f61c821b26ea26944000d795c491cb47e3b44ac57f51f9b907541a3" data-bytes="1116">chain02/runs/LGX-T2-QUOTE-20261024T130334Z/executor/journals/EVE-VHR11-LOCAL-000001.jsonl</a></td><td><span class="bdg ok">Distributed</span></td><td class="num">1,116</td><td class="mono hash" title="9dae2b0e3f61c821b26ea26944000d795c491cb47e3b44ac57f51f9b907541a3">9dae2b0e3f61c821b26ea26944000d795c491cb47e3b44ac57f51f9b907541a3</td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/executor/journals/EVE-VHR11-LOCAL-000002.jsonl" data-sha="d352fbfb6ec8bed57d066df158ab66061f07b294c2546626eadfdc9a5a3d0083" data-bytes="1116">chain02/runs/LGX-T2-QUOTE-20261024T130334Z/executor/journals/EVE-VHR11-LOCAL-000002.jsonl</a></td><td><span class="bdg ok">Distributed</span></td><td class="num">1,116</td><td class="mono hash" title="d352fbfb6ec8bed57d066df158ab66061f07b294c2546626eadfdc9a5a3d0083">d352fbfb6ec8bed57d066df158ab66061f07b294c2546626eadfdc9a5a3d0083</td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/executor/outcomes/EVE-VHR11-LOCAL-000001.json" data-sha="61e49717c5fe1e0d8960be2a5e448a776d6e7019d11d4db381e1ac42faedc6a7" data-bytes="340">chain02/runs/LGX-T2-QUOTE-20261024T130334Z/executor/outcomes/EVE-VHR11-LOCAL-000001.json</a></td><td><span class="bdg ok">Distributed</span></td><td class="num">340</td><td class="mono hash" title="61e49717c5fe1e0d8960be2a5e448a776d6e7019d11d4db381e1ac42faedc6a7">61e49717c5fe1e0d8960be2a5e448a776d6e7019d11d4db381e1ac42faedc6a7</td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/executor/outcomes/EVE-VHR11-LOCAL-000002.json" data-sha="abd8b98053dd7cad67cba9ce3e65c97abf0cfa457fe0b867f973500dd97f71c0" data-bytes="340">chain02/runs/LGX-T2-QUOTE-20261024T130334Z/executor/outcomes/EVE-VHR11-LOCAL-000002.json</a></td><td><span class="bdg ok">Distributed</span></td><td class="num">340</td><td class="mono hash" title="abd8b98053dd7cad67cba9ce3e65c97abf0cfa457fe0b867f973500dd97f71c0">abd8b98053dd7cad67cba9ce3e65c97abf0cfa457fe0b867f973500dd97f71c0</td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/executor/reservations/EVE-VHR11-LOCAL-000001.json" data-sha="c7c1735eaa2028266316eb3221ab997d7278aeaa403ba24abc73bb4878b16cea" data-bytes="131">chain02/runs/LGX-T2-QUOTE-20261024T130334Z/executor/reservations/EVE-VHR11-LOCAL-000001.json</a></td><td><span class="bdg ok">Distributed</span></td><td class="num">131</td><td class="mono hash" title="c7c1735eaa2028266316eb3221ab997d7278aeaa403ba24abc73bb4878b16cea">c7c1735eaa2028266316eb3221ab997d7278aeaa403ba24abc73bb4878b16cea</td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/executor/reservations/EVE-VHR11-LOCAL-000002.json" data-sha="2ca91bacb29d33093e155cc45a86d410cdf7bc07c674d2c8bfd681e862ade18d" data-bytes="131">chain02/runs/LGX-T2-QUOTE-20261024T130334Z/executor/reservations/EVE-VHR11-LOCAL-000002.json</a></td><td><span class="bdg ok">Distributed</span></td><td class="num">131</td><td class="mono hash" title="2ca91bacb29d33093e155cc45a86d410cdf7bc07c674d2c8bfd681e862ade18d">2ca91bacb29d33093e155cc45a86d410cdf7bc07c674d2c8bfd681e862ade18d</td></tr>
+<tr class="grp"><td colspan="4">verification and server receipts <span class="dim">(4)</span></td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/evidence/chain02/r2/missions/LGX-T2-QUOTE/C2X_RESULT_LGX-T2-QUOTE-20261024T130334Z.txt" data-sha="7d13984cad9a9ce0230a59b0295de5dba0a34e71ef6d31ca83fb2bac27bf21ed" data-bytes="937">chain02/r2/missions/LGX-T2-QUOTE/C2X_RESULT_LGX-T2-QUOTE-20261024T130334Z.txt</a></td><td><span class="bdg ok">Distributed</span></td><td class="num">937</td><td class="mono hash" title="7d13984cad9a9ce0230a59b0295de5dba0a34e71ef6d31ca83fb2bac27bf21ed">7d13984cad9a9ce0230a59b0295de5dba0a34e71ef6d31ca83fb2bac27bf21ed</td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/evidence/chain02/r2/missions/LGX-T2-QUOTE/RESULT_SUMMARY_LGX-T2-QUOTE-20261024T130334Z.md" data-sha="798eee2de416d831ef48b5e03b0f16bd51aa5ca9aaba893cd65282612d80af35" data-bytes="3880">chain02/r2/missions/LGX-T2-QUOTE/RESULT_SUMMARY_LGX-T2-QUOTE-20261024T130334Z.md</a></td><td><span class="bdg ok">Distributed</span></td><td class="num">3,880</td><td class="mono hash" title="798eee2de416d831ef48b5e03b0f16bd51aa5ca9aaba893cd65282612d80af35">798eee2de416d831ef48b5e03b0f16bd51aa5ca9aaba893cd65282612d80af35</td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/evidence/lgx_c2_results/2026-10-24/T2_RESULT_LGX-T2-QUOTE-20261024T130334Z/T2_QUOTE_CHECK_OUTPUT.txt" data-sha="57fd0ff294624ee075c03a74c54c55a498f4df27ab799469fb851ddaf27615b5" data-bytes="417">lgx_c2_results/2026-10-24/T2_RESULT_LGX-T2-QUOTE-20261024T130334Z/T2_QUOTE_CHECK_OUTPUT.txt</a></td><td><span class="bdg ok">Distributed</span></td><td class="num">417</td><td class="mono hash" title="57fd0ff294624ee075c03a74c54c55a498f4df27ab799469fb851ddaf27615b5">57fd0ff294624ee075c03a74c54c55a498f4df27ab799469fb851ddaf27615b5</td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/evidence/chain02/r2/lgx_c2/T2/T2_QUOTE_CHECK.py" data-sha="67d8184ceaf8f49843869f0ad11c0de339a504c66e474f532a37bf47b1243deb" data-bytes="6153">chain02/r2/lgx_c2/T2/T2_QUOTE_CHECK.py</a></td><td><span class="bdg ok">Distributed</span></td><td class="num">6,153</td><td class="mono hash" title="67d8184ceaf8f49843869f0ad11c0de339a504c66e474f532a37bf47b1243deb">67d8184ceaf8f49843869f0ad11c0de339a504c66e474f532a37bf47b1243deb</td></tr>
+<tr class="grp"><td colspan="4">isolation window <span class="dim">(5)</span></td></tr>
+<tr><td class="path">chain02/r2/h2/H2_CHANGE_20261024T125556Z.txt<span class="why">server addresses / owner environment / container topology and egress results (owner decision 2026-10-25)</span></td><td><span class="bdg off">Withheld</span></td><td class="num">6,189</td><td class="mono hash" title="7dc8b691cf4792977f612478ec1e89cc3e1a599084489aedaac0c379bd1da732">7dc8b691cf4792977f612478ec1e89cc3e1a599084489aedaac0c379bd1da732</td></tr>
+<tr><td class="path">chain02/r2/h2/H2K_CHECK_20261024T125801Z.txt<span class="why">server addresses / owner environment / container topology and egress results (owner decision 2026-10-25)</span></td><td><span class="bdg off">Withheld</span></td><td class="num">1,379</td><td class="mono hash" title="42f341a14853e69da81945999df3ea3c9840b30ce34ea5d742c834e7d8295f90">42f341a14853e69da81945999df3ea3c9840b30ce34ea5d742c834e7d8295f90</td></tr>
+<tr><td class="path">chain02/r2/h2/H2_CANARY_T2_20261024T130725Z.txt<span class="why">server addresses / owner environment / container topology and egress results (owner decision 2026-10-25)</span></td><td><span class="bdg off">Withheld</span></td><td class="num">747</td><td class="mono hash" title="994426b386f342d887f5908a5c3fb4cf36917d853a7d42fd137682827438a0b0">994426b386f342d887f5908a5c3fb4cf36917d853a7d42fd137682827438a0b0</td></tr>
+<tr><td class="path">chain02/r2/h2/H2_ROLLBACK_20261024T130828Z.txt<span class="why">server addresses / owner environment / container topology and egress results (owner decision 2026-10-25)</span></td><td><span class="bdg off">Withheld</span></td><td class="num">3,796</td><td class="mono hash" title="71d820e15cfd6dcd2bec12735a49fdb06921af5f21e5a3aaf28d410e21f108f0">71d820e15cfd6dcd2bec12735a49fdb06921af5f21e5a3aaf28d410e21f108f0</td></tr>
+<tr><td class="path">lgx_c2_results/2026-10-24/T2_PRECHECK_20261024T125552Z/T2_PRECHECK_LOG.txt<span class="why">environment fingerprint: WSL user and home, distro, local tool binary hashes (owner decision 2026-10-25)</span></td><td><span class="bdg off">Withheld</span></td><td class="num">3,193</td><td class="mono hash" title="ebc9a629d0fd17c577efb28406da7447410a51618e789233a6959cd380a070a0">ebc9a629d0fd17c577efb28406da7447410a51618e789233a6959cd380a070a0</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="section-h">Manifest, reading copies and support files in the package</div>
+  <div class="tbl"><table>
+    <thead><tr><th>File</th><th>Role</th><th>Bytes</th><th>SHA-256</th></tr></thead>
+    <tbody>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/original/LGX_C2_T2_EVIDENCE_FREEZE_2026-10-24.md" data-sha="f9468fd311a83be92daa0bb0fd013139d0feb5957124e517edce7ccf746d8fef" data-bytes="8833">original/LGX_C2_T2_EVIDENCE_FREEZE_2026-10-24.md</a><span class="why">frozen manifest, byte-identical copy</span></td><td><span class="bdg ok">Manifest</span></td><td class="num">8,833</td><td class="mono hash">f9468fd311a83be92daa0bb0fd013139d0feb5957124e517edce7ccf746d8fef</td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/reading_copies/RUN_LGX-T2-QUOTE-20261024T130334Z.READING_COPY.txt" data-sha="9a4de69006dc316fd511abff245644a1e49d3aff905a9387c901de9cf0edd096" data-bytes="12681">reading_copies/RUN_LGX-T2-QUOTE-20261024T130334Z.READING_COPY.txt</a><span class="why">Derived from chain02/r2/missions/LGX-T2-QUOTE/RUN_LGX-T2-QUOTE-20261024T130334Z.txt; redacted; NOT evidence</span></td><td><span class="bdg warn">Reading copy</span></td><td class="num">12,681</td><td class="mono hash">9a4de69006dc316fd511abff245644a1e49d3aff905a9387c901de9cf0edd096</td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/reading_copies/T2_SPEC.READING_COPY_r2.md" data-sha="fca0833c59f92f7d4004e7df4f0edfac7a3bca32a5629aaf7d1f68eec84d9406" data-bytes="9945">reading_copies/T2_SPEC.READING_COPY_r2.md</a><span class="why">Derived from chain02/r2/lgx_c2/T2/T2_SPEC.md; redacted; NOT evidence</span></td><td><span class="bdg warn">Reading copy</span></td><td class="num">9,945</td><td class="mono hash">fca0833c59f92f7d4004e7df4f0edfac7a3bca32a5629aaf7d1f68eec84d9406</td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/README.md" data-sha="f6fe1115baa59db2b5f0b0755704d9ff1346ef94d8628be4fc8889bc9fc1b493" data-bytes="4755">README.md</a><span class="why">scope, limits, how to check</span></td><td><span class="bdg neutral">Support</span></td><td class="num">4,755</td><td class="mono hash">f6fe1115baa59db2b5f0b0755704d9ff1346ef94d8628be4fc8889bc9fc1b493</td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/VERIFY_PACKAGE.py" data-sha="a7175db1264d5fc16344eb3597a333bf3d8f227ed06e970b769b94fcc4f7226e" data-bytes="3912">VERIFY_PACKAGE.py</a><span class="why">integrity check (original / withheld / reading copy / unlisted)</span></td><td><span class="bdg neutral">Support</span></td><td class="num">3,912</td><td class="mono hash">a7175db1264d5fc16344eb3597a333bf3d8f227ed06e970b769b94fcc4f7226e</td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/g1/G1_CHECK.sh" data-sha="8d7e6f9e81164585291c08554a3d1063bea18f44ae18a9aadb67893ea0a8afa9" data-bytes="2738">g1/G1_CHECK.sh</a><span class="why">prepared mandate signature check - NOT RUN</span></td><td><span class="bdg neutral">Support</span></td><td class="num">2,738</td><td class="mono hash">8d7e6f9e81164585291c08554a3d1063bea18f44ae18a9aadb67893ea0a8afa9</td></tr>
+<tr><td class="path"><a href="package/public_evidence_T2_2026-10-25_final/PUBLICATION_MANIFEST.json" data-sha="c5797ce9f18b64e136e9330bfde9404f6c313e3f39518545f40d94df6410cc53" data-bytes="21950">PUBLICATION_MANIFEST.json</a><span class="why">status of all 48 originals, reading copies and support files</span></td><td><span class="bdg neutral">Support</span></td><td class="num">21,950</td><td class="mono hash">c5797ce9f18b64e136e9330bfde9404f6c313e3f39518545f40d94df6410cc53</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="card"><div class="card-h">Metadata visible in the files</div><div class="card-b">The distributed files name the server short host name <span class="mono">eve-agents-01</span>, the agent container names, server-internal paths and the local project path. The frozen manifest lists the names, not the contents, of all 48 files, including the withheld ones. The mandate signature file is an OpenSSH signature: it contains the signer's public key and no private key material.</div></div>
+</main>
+
+<footer>
+  EVE Verified &middot; Organiq Sweden AB. Session LGX-T2-QUOTE-20261024T130334Z, run 24 October 2026, evidence frozen 24 October 2026, package finalised 25 October 2026, published by owner decision (page prepared 2026-10-26). The README inside the package says "not published" because it was frozen before publication and is kept byte-identical.
+</footer>
+
+<script>
+(function(){
+  var btn=document.getElementById('vbtn'), out=document.getElementById('vout');
+  function hex(b){return Array.prototype.map.call(new Uint8Array(b),function(x){return ('0'+x.toString(16)).slice(-2)}).join('')}
+  btn.addEventListener('click',async function(){
+    if(!window.crypto||!crypto.subtle){out.textContent='This browser cannot compute SHA-256 here. Use the script instead.';return}
+    btn.disabled=true;var links=[].slice.call(document.querySelectorAll('a[data-sha]')),ok=0,bad=0;
+    for(var i=0;i<links.length;i++){var a=links[i];out.textContent='Checking '+(i+1)+' of '+links.length;
+      var mark=a.parentNode.querySelector('.chk');if(!mark){mark=document.createElement('span');mark.className='chk';a.after(mark)}
+      try{var r=await fetch(a.getAttribute('href'),{cache:'no-store'});if(!r.ok)throw 0;var b=await r.arrayBuffer();var h=hex(await crypto.subtle.digest('SHA-256',b));
+        var g=h===a.dataset.sha&&b.byteLength===+a.dataset.bytes;g?ok++:bad++;mark.textContent=g?'MATCH':'MISMATCH';mark.style.color=g?'var(--green)':'var(--orange)'}
+      catch(e){bad++;mark.textContent='NOT LOADED';mark.style.color='var(--orange)'}}
+    out.innerHTML='<strong style="color:'+(bad?'var(--orange)':'var(--green)')+'">'+(bad?'Check failed':'All match')+'</strong>: '+ok+' of '+links.length+' linked files match their published SHA-256.';
+    btn.disabled=false;btn.textContent='Check again'});
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,342 @@
+{
+  "det_seq": 2,
+  "determinations": {
+    "EVE-DET-LOCAL-000001": {
+      "acquisitions": [],
+      "axes": {
+        "binding_status": "EXACT_MATCH",
+        "handling_status": "handled_corroborated",
+        "result": null,
+        "window_qualification": null
+      },
+      "claim_boundary": null,
+      "conditional_analysis": [],
+      "context_binding": {
+        "bound_invocation_id": "057/L2/C2-LGX-T2-QUOTE-20261024T130334Z-H1/invocation-1"
+      },
+      "coverage": null,
+      "created_at": "2026-10-24T13:05:27Z",
+      "derivation_trace": {
+        "fulfillment": {
+          "entries": [
+            {
+              "evidence_used": [
+                {
+                  "content_hash": "d90a7154f85f33c936b44f8ed4d4de375c603d0488ab9317cb547ca4645a06a1",
+                  "evidence_kind": "observation",
+                  "record_id": "EVE-OBS-LOCAL-000001"
+                }
+              ],
+              "evidentiary_roles": [
+                "orchestrator_manifest_review_of_agent_a_package"
+              ],
+              "outcome": "ESTABLISHED",
+              "predicate_id": "P1",
+              "proposition": {
+                "operands": [
+                  "orchestrator_manifest_review_of_agent_a_package"
+                ],
+                "operator": "OCCURRED"
+              },
+              "qualifications": [
+                "Q-0001"
+              ],
+              "reason": null
+            }
+          ],
+          "state": "EVALUATED"
+        },
+        "incompatibility": {
+          "state": "NOT_DECLARED"
+        }
+      },
+      "det_schema_version": "det-1.1",
+      "determination_id": "EVE-DET-LOCAL-000001",
+      "evaluated_at": "2026-10-24T13:05:27Z",
+      "evidence": [
+        {
+          "content_hash": "d90a7154f85f33c936b44f8ed4d4de375c603d0488ab9317cb547ca4645a06a1",
+          "evidence_kind": "observation",
+          "record_id": "EVE-OBS-LOCAL-000001"
+        }
+      ],
+      "feasibility_findings": [
+        {
+          "determined_at": "evaluation",
+          "establishable_proposition": "OCCURRED(orchestrator_manifest_review_of_agent_a_package)",
+          "predicate_id": "P1",
+          "required_proposition": "OCCURRED(orchestrator_manifest_review_of_agent_a_package)",
+          "state": "OPERATIONAL"
+        }
+      ],
+      "frame": {
+        "binding_outcome": "EXACT_MATCH",
+        "conclusion": "handled_corroborated",
+        "evaluator_version": "g3-hc1-evaluator-0.1",
+        "expectation_ref": {
+          "content_hash": "f649ae39d0b554e4e19193c18fcb35a4b4f89e0f003b8034501c3594e4e32551",
+          "expectation_id": "057-L2-HE-C2-LGX-T2-QUOTE-20261024T130334Z-H1",
+          "state": "BOUND"
+        },
+        "fulfillment_contract_ref": {
+          "content_hash": "a94dcf8295ecd77027b60105266db0797fb230c4cda287ada5c3a06aa5604e5a",
+          "contract_id": "057-L2-FC-C2-LGX-T2-QUOTE-20261024T130334Z-H1",
+          "state": "BOUND"
+        },
+        "incompatibility_contract_ref": {
+          "state": "NOT_DECLARED"
+        },
+        "par_reference": {
+          "content_hash": "a750f8612ffb4611a8d89f541e48ef53d9839666bda61b1748def4c14e4f9495",
+          "manifest_hash": "73ce9cf24e2a878de383fae0fb6a70cd30118af7ca2f4171c0ab673d803002a2",
+          "record_id": "EVE-PAR-LOCAL-000001",
+          "record_schema_version": "par-1.2",
+          "reference_schema_version": "parref-1.0"
+        }
+      },
+      "gate_trace": [
+        {
+          "gate_id": "GATE_HISTORICAL_BINDING",
+          "outcome": "PASSED"
+        },
+        {
+          "gate_id": "GATE_EXPECTATION_DECLARED",
+          "outcome": "PASSED"
+        },
+        {
+          "gate_id": "GATE_ISSUANCE_BOUND_CONTRACT",
+          "outcome": "PASSED"
+        },
+        {
+          "gate_id": "GATE_NON_VACUOUS_CONTRACT",
+          "outcome": "PASSED"
+        },
+        {
+          "gate_id": "GATE_SEMANTIC_IMMUTABILITY",
+          "outcome": "PASSED"
+        },
+        {
+          "gate_id": "GATE_PREDICATE_OPERATIONALITY",
+          "outcome": "PASSED"
+        },
+        {
+          "gate_id": "GATE_CLAIM_OBJECT_VERSION_BINDING",
+          "outcome": "PASSED"
+        },
+        {
+          "gate_id": "GATE_ADMISSIBLE_POSITIVE_EVIDENCE",
+          "outcome": "PASSED"
+        },
+        {
+          "gate_id": "GATE_TEMPORAL_SELECTOR_QUALIFICATION",
+          "outcome": "PASSED"
+        },
+        {
+          "gate_id": "GATE_NO_SILENT_WEAKENING",
+          "outcome": "PASSED"
+        }
+      ],
+      "operationality": null,
+      "qualifications": [
+        {
+          "basis": {
+            "binding_basis": "observation EVE-OBS-LOCAL-000001 value package_manifest_sha256",
+            "integrity_basis": "INDEPENDENT_SYSTEM_LOG via 057-local-file-measurement",
+            "origin": "system_assigned",
+            "precision": null,
+            "proposition_match": "EXACT"
+          },
+          "evidence_ref": {
+            "content_hash": "d90a7154f85f33c936b44f8ed4d4de375c603d0488ab9317cb547ca4645a06a1",
+            "evidence_kind": "observation",
+            "record_id": "EVE-OBS-LOCAL-000001"
+          },
+          "outcome": "QUALIFIED",
+          "qualification_id": "Q-0001",
+          "reason_code": null,
+          "semantic_role": "orchestrator_manifest_review_of_agent_a_package",
+          "use_kind": "operand"
+        }
+      ],
+      "seal": {
+        "content_hash": "3273d1df7d11ecf67fc104e5c34c4fead7923da72e8e7cb216780e6f135e32f4",
+        "manifest_hash": "2bb9d931d9c3a5f54ce4f5e0852ac84f58aa214050e46da03ea7790eb2df2082",
+        "seal_id": "EVE-DET-LOCAL-000001",
+        "seal_mode": "local",
+        "sealed_at": "2026-10-24T13:05:27Z"
+      },
+      "selector_accounting": {
+        "state": "NO_SELECTOR_USE_REQUIRED"
+      }
+    },
+    "EVE-DET-LOCAL-000002": {
+      "acquisitions": [],
+      "axes": {
+        "binding_status": "EXACT_MATCH",
+        "handling_status": "handled_corroborated",
+        "result": null,
+        "window_qualification": null
+      },
+      "claim_boundary": null,
+      "conditional_analysis": [],
+      "context_binding": {
+        "bound_invocation_id": "057/L2/C2-LGX-T2-QUOTE-20261024T130334Z-H2/invocation-1"
+      },
+      "coverage": null,
+      "created_at": "2026-10-24T13:06:19Z",
+      "derivation_trace": {
+        "fulfillment": {
+          "entries": [
+            {
+              "evidence_used": [
+                {
+                  "content_hash": "1213a9dd1b2264806154b6c5d7253a89dec97d6113ca0b84c882f45a2b405e77",
+                  "evidence_kind": "observation",
+                  "record_id": "EVE-OBS-LOCAL-000001"
+                }
+              ],
+              "evidentiary_roles": [
+                "orchestrator_manifest_review_of_agent_a_package"
+              ],
+              "outcome": "ESTABLISHED",
+              "predicate_id": "P1",
+              "proposition": {
+                "operands": [
+                  "orchestrator_manifest_review_of_agent_a_package"
+                ],
+                "operator": "OCCURRED"
+              },
+              "qualifications": [
+                "Q-0001"
+              ],
+              "reason": null
+            }
+          ],
+          "state": "EVALUATED"
+        },
+        "incompatibility": {
+          "state": "NOT_DECLARED"
+        }
+      },
+      "det_schema_version": "det-1.1",
+      "determination_id": "EVE-DET-LOCAL-000002",
+      "evaluated_at": "2026-10-24T13:06:19Z",
+      "evidence": [
+        {
+          "content_hash": "1213a9dd1b2264806154b6c5d7253a89dec97d6113ca0b84c882f45a2b405e77",
+          "evidence_kind": "observation",
+          "record_id": "EVE-OBS-LOCAL-000001"
+        }
+      ],
+      "feasibility_findings": [
+        {
+          "determined_at": "evaluation",
+          "establishable_proposition": "OCCURRED(orchestrator_manifest_review_of_agent_a_package)",
+          "predicate_id": "P1",
+          "required_proposition": "OCCURRED(orchestrator_manifest_review_of_agent_a_package)",
+          "state": "OPERATIONAL"
+        }
+      ],
+      "frame": {
+        "binding_outcome": "EXACT_MATCH",
+        "conclusion": "handled_corroborated",
+        "evaluator_version": "g3-hc1-evaluator-0.1",
+        "expectation_ref": {
+          "content_hash": "9d20df3d61442d4f12ad8ce759b3adba8fce2838de96500e50f2b85179c50855",
+          "expectation_id": "057-L2-HE-C2-LGX-T2-QUOTE-20261024T130334Z-H2",
+          "state": "BOUND"
+        },
+        "fulfillment_contract_ref": {
+          "content_hash": "aa0b77c512ce2eb412b17239f6b6a43363b535636745f9a8470e8db3a0f34c15",
+          "contract_id": "057-L2-FC-C2-LGX-T2-QUOTE-20261024T130334Z-H2",
+          "state": "BOUND"
+        },
+        "incompatibility_contract_ref": {
+          "state": "NOT_DECLARED"
+        },
+        "par_reference": {
+          "content_hash": "a9f9fc8dc471bb354887a395bc281af9ee3043aa9a256eb369666f73301101f5",
+          "manifest_hash": "1a8969d4475accc3f85947114c6d21270b97efda01eb0894d17dbaabbaf5f274",
+          "record_id": "EVE-PAR-LOCAL-000001",
+          "record_schema_version": "par-1.2",
+          "reference_schema_version": "parref-1.0"
+        }
+      },
+      "gate_trace": [
+        {
+          "gate_id": "GATE_HISTORICAL_BINDING",
+          "outcome": "PASSED"
+        },
+        {
+          "gate_id": "GATE_EXPECTATION_DECLARED",
+          "outcome": "PASSED"
+        },
+        {
+          "gate_id": "GATE_ISSUANCE_BOUND_CONTRACT",
+          "outcome": "PASSED"
+        },
+        {
+          "gate_id": "GATE_NON_VACUOUS_CONTRACT",
+          "outcome": "PASSED"
+        },
+        {
+          "gate_id": "GATE_SEMANTIC_IMMUTABILITY",
+          "outcome": "PASSED"
+        },
+        {
+          "gate_id": "GATE_PREDICATE_OPERATIONALITY",
+          "outcome": "PASSED"
+        },
+        {
+          "gate_id": "GATE_CLAIM_OBJECT_VERSION_BINDING",
+          "outcome": "PASSED"
+        },
+        {
+          "gate_id": "GATE_ADMISSIBLE_POSITIVE_EVIDENCE",
+          "outcome": "PASSED"
+        },
+        {
+          "gate_id": "GATE_TEMPORAL_SELECTOR_QUALIFICATION",
+          "outcome": "PASSED"
+        },
+        {
+          "gate_id": "GATE_NO_SILENT_WEAKENING",
+          "outcome": "PASSED"
+        }
+      ],
+      "operationality": null,
+      "qualifications": [
+        {
+          "basis": {
+            "binding_basis": "observation EVE-OBS-LOCAL-000001 value package_manifest_sha256",
+            "integrity_basis": "INDEPENDENT_SYSTEM_LOG via 057-local-file-measurement",
+            "origin": "system_assigned",
+            "precision": null,
+            "proposition_match": "EXACT"
+          },
+          "evidence_ref": {
+            "content_hash": "1213a9dd1b2264806154b6c5d7253a89dec97d6113ca0b84c882f45a2b405e77",
+            "evidence_kind": "observation",
+            "record_id": "EVE-OBS-LOCAL-000001"
+          },
+          "outcome": "QUALIFIED",
+          "qualification_id": "Q-0001",
+          "reason_code": null,
+          "semantic_role": "orchestrator_manifest_review_of_agent_a_package",
+          "use_kind": "operand"
+        }
+      ],
+      "seal": {
+        "content_hash": "594d73dc03d398c07df06a26162f0cbe403e0ab4a970905358b912a87d5b0d33",
+        "manifest_hash": "9afbb6633fe496d1259a2a68228a05c78bf494343fdd354b9a13b680915023e4",
+        "seal_id": "EVE-DET-LOCAL-000002",
+        "seal_mode": "local",
+        "sealed_at": "2026-10-24T13:06:19Z"
+      },
+      "selector_accounting": {
+        "state": "NO_SELECTOR_USE_REQUIRED"
+      }
+    }
+  },
+  "store_schema_version": "1.0"
+}

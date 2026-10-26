@@ -1,0 +1,139 @@
+READING COPY - NOT EVIDENCE - NOT PART OF THE FROZEN CHAIN
+derived from  chain02/r2/missions/LGX-T2-QUOTE/RUN_LGX-T2-QUOTE-20261024T130334Z.txt
+original      sha256 22d43e5cd4e797ffd4dd2e38dd66e1b7117aa6042a81950841319dfb9ea2b627  bytes 12364  (listed in original/LGX_C2_T2_EVIDENCE_FREEZE_2026-10-24.md)
+this file     has its OWN sha256; it cannot be checked against the frozen manifest and never replaces the original
+redactions    marked [REDACTED: ...]; line N of the original = line N+7 of this file; see PUBLICATION_MANIFEST.md
+original      WITHHELD (owner decision 2026-10-25); only this reading copy is distributed
+==========================================================================================================
+RUN_TASK LGX-C2 r4 057 utc=20261024T130334Z mission=LGX-T2-QUOTE session=LGX-T2-QUOTE-20261024T130334Z
+wrapper sha256 1c945f698397984cb8619eb662160cfdbf6f4dbfc7f84f6de2bd457e7f3ee510
+## A ACTIVATION
+activation record <PROJECT>/chain02/r2/lgx_c2/activations/N3R3_ACT_654226842f988bd162a0fcc5add09b152360aac446f77a8ad39e65b47614bc77.md sha256 654226842f988bd162a0fcc5add09b152360aac446f77a8ad39e65b47614bc77: ACTIVE for LGX-T2-QUOTE until 2026-10-24T14:02:24Z; consumed by session LGX-T2-QUOTE-20261024T130334Z
+## 0 PIN + MISSION
+env gate: CMP group LOCKED distributions 49 identical_entries 49 identical_RECORD_file 49
+env gate: CMP group TOOLING distributions 2 identical_entries 2 identical_RECORD_file 2
+env gate: CMP differences 0 substantive 0
+inputs OK (20 files); mission LGX-T2-QUOTE task 6d575090fcbfa47a8d050087a3ae93706aae20e8e81659367a03dd4b054c431d mission text 456652d461549fe1c59e64ea56ec3371bf3d0bf585899f285e363326973338a7
+## 1 CLIENT + SERVER r3k3
+generated r3k v2 bc41fed9040bf0d991f87faba4fc29c71e7557b63409316546a91d74e455f856 -> r3k3 916021e9327bfa7169fbcaac9893ffd6c71507609b420de06b80e6428b5f4d4a; client dc00624391985ae02c2fe62ef4fa0164d5d54d4869e23a57dce7e4990603c525
+present p2/src/c2_chain_r3k.py dc00624391985ae02c2fe62ef4fa0164d5d54d4869e23a57dce7e4990603c525
+present p2/src/C2_SERVER_r3k.sh 916021e9327bfa7169fbcaac9893ffd6c71507609b420de06b80e6428b5f4d4a
+present p2/src/c2x_chain_verify_r2.py d3deb2b5a6efc480f5d25d83e81dfd4c69c576827dc28c11417300feb622d106
+## 2 PREVIEW + OWNER APPROVAL (nothing is written or signed before your typed approval)
+mission        LGX-T2-QUOTE
+task title     # TASK LGX-T2-QUOTE - quote draft from a customer inquiry (synthetic test data)
+task           <PROJECT>/chain02/r2/missions/LGX-T2-QUOTE/TASK.md
+task sha256    6d575090fcbfa47a8d050087a3ae93706aae20e8e81659367a03dd4b054c431d (4121 bytes)
+mission text   <PROJECT>/chain02/r2/missions/LGX-T2-QUOTE/MISSION_HOLD_LIFT.md
+mission sha256 456652d461549fe1c59e64ea56ec3371bf3d0bf585899f285e363326973338a7
+agents         A hermes-agent-a-1792514774354 (worker) -> B hermes-agent-b-1792514810156 (reviewer), model anthropic/claude-sonnet-5-5, max 2 handoffs, no retry
+cost cap       2.00 USD (stop rule between turns on Hermes estimates, NOT a hard limit; C-4 deferred)
+window         2026-10-24T13:03:35Z .. 2026-10-24T14:03:35Z (hard end; mission valid until 2026-10-31T23:59:59Z)
+server         r3k3 916021e9327bfa7169fbcaac9893ffd6c71507609b420de06b80e6428b5f4d4a (after local verification: client record + C2-X output are uploaded as CLIENT-REPORTED evidence)
+----- mission text -----
+# MISSION_HOLD_LIFT - LGX-T2-QUOTE (owner text; T2 = first live LangGraph/Hermes run under EVE control)
+
+```text
+MISSION_ID LGX-T2-QUOTE
+TASK_SHA256 6d575090fcbfa47a8d050087a3ae93706aae20e8e81659367a03dd4b054c431d
+VALID_UNTIL_UTC 2026-10-31T23:59:59Z
+MAX_COST_CAP_USD 2.00
+LGX_ORCHESTRATOR_SHA256 865f20a983dbbfeb9a6949d1f6f0510e9bec3c364b44b94266ee0f07885b5393
+```
+
+## Scope
+
+- Covers only runs of THIS mission: TASK.md with exactly the sha256 above, through an activated copy of N3 r4
+  (RUN_TASK_LGX_WSL_r4.sh 3552fdca..., only line 81 changed) -> N1 r3 (LangGraph orchestration, the sha256 above) ->
+  F5 dc006243... -> C2 server r3k3 916021e9... -> agent A (worker) then agent B (reviewer), each started at most once,
+  no retry.
+- Every run needs (1) a separate OWNER-GO with an activation record bound to this mission, (2) the owner's typed
+  approval of the MISSION_ID after the preview and (3) the owner's signature of a NEW mandate naming the sha256 of
+  TASK.md and of exactly this text. Without all three, nothing runs.
+- Roles: LangGraph orchestrates the hand-offs (fixed control flow, no model of its own); the Hermes agents do the
+  work; EVE controls admission, mandate, binding and traceability.
+- Data: all names and figures in TASK.md are fictional test data. The result is a draft file; nothing is sent to
+  anyone and no business system (FlowWink or other) is written.
+- Cost: cost_cap_usd of the signed mandate (at most MAX_COST_CAP_USD 2.00) is an ESTIMATE-BASED stop rule checked
+  before each agent turn on after-the-fact Hermes estimates. It is NOT a hard spend limit: a single agent turn can
+  exceed it. Actual cost is read from the server ledger after the run. The operational STOP of 15 USD on the shared
+  ledger is separate and unchanged.
+- Agent permissions: the agents' runtime-enabled tools and their containers' network egress are NOT_ESTABLISHED; the
+  server prompt "do not contact anyone, do not publish" is an instruction, not a technical barrier.
+- Ends at VALID_UNTIL_UTC; each run ends at its mandate's hard_end_utc. Changes no agent config, toolset, EVE Core,
+  VHR, LGX or run-path file.
+
+## Not established
+
+E-3 (independent verification), T7 anchor, exclusive EVE control of the agents, the agents' runtime tools and network
+egress, a hard cost limit, quote quality beyond the deterministic check and the reviewer's acceptance criteria.
+
+Approved by: Joakim Eklund, by a separate OWNER-GO, typing the MISSION_ID and signing a mandate that names the
+sha256 of exactly this text.
+----- end of mission text -----
+Type the MISSION_ID (LGX-T2-QUOTE) to approve this run; anything else stops:
+owner approval typed: LGX-T2-QUOTE
+## 3 MANDATE
+mandate <PROJECT>/chain02/r2/missions/LGX-T2-QUOTE/MANDATE_LGX-T2-QUOTE-20261024T130334Z.txt sha256 4494612f489fb858780906075880900e51181a564d2648be277bca68f942eaab
+format=EVE_057_MANDATE_V1
+mandate_id=M-LGX-T2-QUOTE-20261024T130334Z
+session=LGX-T2-QUOTE-20261024T130334Z
+task_sha256=6d575090fcbfa47a8d050087a3ae93706aae20e8e81659367a03dd4b054c431d
+client_sha256=dc00624391985ae02c2fe62ef4fa0164d5d54d4869e23a57dce7e4990603c525
+server_script_sha256=916021e9327bfa7169fbcaac9893ffd6c71507609b420de06b80e6428b5f4d4a
+verifier_sha256=d3deb2b5a6efc480f5d25d83e81dfd4c69c576827dc28c11417300feb622d106
+hold_lift_text_sha256=456652d461549fe1c59e64ea56ec3371bf3d0bf585899f285e363326973338a7
+agent_a=hermes-agent-a-1792514774354
+agent_b=hermes-agent-b-1792514810156
+model_a=anthropic/claude-sonnet-5-5
+model_b=anthropic/claude-sonnet-5-5
+cost_cap_usd=2.00
+max_handoffs=2
+attestations=1
+auth_method=openssh-ed25519-sig-v1
+not_before_utc=2026-10-24T13:03:35Z
+hard_end_utc=2026-10-24T14:03:35Z
+Signing = OWNER live GO for exactly this mandate (Ctrl-C now = nothing happens). Owner GO key passphrase (up to 3 attempts):
+[REDACTED: signing attempt detail - local key file path and attempt outcome]
+[REDACTED: signing attempt detail - local key file path and attempt outcome]
+signed <PROJECT>/chain02/r2/missions/LGX-T2-QUOTE/MANDATE_LGX-T2-QUOTE-20261024T130334Z.txt.sig sha256 633bee9a64969a0bb72fb83b76227884d4aa6265a68dd23287efda9baea13338 [REDACTED: attempt number]
+## 4 RUN (eve-c2 key passphrase; ssh-add allows 3 attempts)
+Identity added: [REDACTED: local key file path and key comment]
+Lifetime set to 3600 seconds
+TESTED_LOCAL P1 PASS | EVE v27 export matches EXPORT_RECORD; adapter unchanged
+TESTED_LOCAL P2 PASS | pre-registered task file equals the pinned sha256
+TESTED_LOCAL P3 PASS | server preflight
+TESTED_LOCAL H1-P PASS | package H1 built from the pre-registered task
+TESTED_LOCAL H1-T PASS | package H1 holds exactly TASK.md (== task pin)
+TESTED_LOCAL H1 PASS | EVE admits H1; agent-a started once, only through the executor launch
+TESTED_LOCAL H1-O PASS | H1 output fetched; manifest sha == executor result_sha256; files == manifest
+TESTED_LOCAL H1-E PASS | H1 executor outcome on disk: result_sha256 == fetched manifest, adm == record
+TESTED_LOCAL H2-P PASS | package H2 built on the server from the H1 output + LINK.json
+TESTED_LOCAL M3-PRE PASS | M-3 before issue/admission of H2: LINK.json == H1 facts, result == H1 output, TASK.md == pin, no extra file, H1 record/outcome on disk unchanged
+TESTED_LOCAL H2 PASS | EVE admits H2; M-3 re-checked inside the launch; agent-b started once
+TESTED_LOCAL H2-O PASS | H2 output fetched; manifest sha == executor result_sha256
+TESTED_LOCAL N3 PASS | H2 record run again -> ALREADY_CLOSED
+TESTED_LOCAL G2 PASS | recipient override removed after the chain
+TESTED_LOCAL S1 PASS | agent invocations: agent-a == 1, agent-b == 1
+ALL_PASS <PROJECT>/chain02/runs/C2-live-LGX-T2-QUOTE-20261024T130334Z.json sha256 02df91531127341c145c04ed2d2821d2337552fb5c86dda981b5ab0120d021f8
+client rc=0 record <PROJECT>/chain02/runs/C2-live-LGX-T2-QUOTE-20261024T130334Z.json sha256 02df91531127341c145c04ed2d2821d2337552fb5c86dda981b5ab0120d021f8 verdict=ALL_PASS
+## 5 VERIFY (C2-X chain verifier, run once; output kept create-only; deterministic; same producer: not E-3)
+SESSION <PROJECT>/chain02/runs/LGX-T2-QUOTE-20261024T130334Z
+FAILS []
+INFO {"H1": {"K1": {"content": "a61f0a7e4dfc53cf1c04736231041e5fa6e93f1a47357fb2f7a6008386411dd1", "manifest": "045bbdc707e177f5fa7698334efabb6f132d2939483fde87518058c8467daac5"}, "K2": {"content": "3273d1df7d11ecf67fc104e5c34c4fead7923da72e8e7cb216780e6f135e32f4", "manifest": "2bb9d931d9c3a5f54ce4f5e0852ac84f58aa214050e46da03ea7790eb2df2082"}, "K6": "ok", "record_id": "EVE-VHR11-LOCAL-000001"}, "H2": {"K1": {"content": "33c9da5b8c69d5a2f91e93840997e4d544ab94c349ecb8d68511d8b059619100", "manifest": "a723d69256b56b212bc34fd7df9de4374c943c2d0b059707935b4f61a3d78bd7"}, "K2": {"content": "594d73dc03d398c07df06a26162f0cbe403e0ab4a970905358b912a87d5b0d33", "manifest": "9afbb6633fe496d1259a2a68228a05c78bf494343fdd354b9a13b680915023e4"}, "K6": "ok", "record_id": "EVE-VHR11-LOCAL-000002"}}
+EVE_MODULES_LOADED []
+RESULT CHAIN_VERIFIED
+c2x output <PROJECT>/chain02/r2/missions/LGX-T2-QUOTE/C2X_RESULT_LGX-T2-QUOTE-20261024T130334Z.txt sha256 7d13984cad9a9ce0230a59b0295de5dba0a34e71ef6d31ca83fb2bac27bf21ed
+## 5b OUTCOME RECEIPT (R-B; only when the client record is missing or incomplete)
+client record complete - no receipt
+## 6 SERVER EVIDENCE (client-reported; uploaded only after local verification; never changes the result)
+upload client_record.json sha256 02df91531127341c145c04ed2d2821d2337552fb5c86dda981b5ab0120d021f8 -> rc=0 C2 evidence stored name=client_record.json sha256=02df91531127341c145c04ed2d2821d2337552fb5c86dda981b5ab0120d021f8 bytes=16566 receipt_sha256=80692c1c211d93f1ff5404bcfc72f98c3cc3a46b439dd1fb39624bb9a381f99e C2 evidence class=CLIENT_REPORTED_SERVER_RECEIPT_CHECKED independent_verification=NOT_ESTABLISHED 
+upload c2x_result.txt sha256 7d13984cad9a9ce0230a59b0295de5dba0a34e71ef6d31ca83fb2bac27bf21ed -> rc=0 C2 evidence stored name=c2x_result.txt sha256=7d13984cad9a9ce0230a59b0295de5dba0a34e71ef6d31ca83fb2bac27bf21ed bytes=937 receipt_sha256=ead072f83b88a2990033dd1dafcbe94a53fbcdb8eb074edc986ad47ae41c8ea0 C2 evidence class=CLIENT_REPORTED_SERVER_RECEIPT_CHECKED independent_verification=NOT_ESTABLISHED 
+C2 evidence_item name=client_record.json state=STORED sha256=02df91531127341c145c04ed2d2821d2337552fb5c86dda981b5ab0120d021f8 bytes=16566 receipt_sha256=80692c1c211d93f1ff5404bcfc72f98c3cc3a46b439dd1fb39624bb9a381f99e
+C2 evidence_item name=c2x_result.txt state=STORED sha256=7d13984cad9a9ce0230a59b0295de5dba0a34e71ef6d31ca83fb2bac27bf21ed bytes=937 receipt_sha256=ead072f83b88a2990033dd1dafcbe94a53fbcdb8eb074edc986ad47ae41c8ea0
+C2 evidence_session session=LGX-T2-QUOTE-20261024T130334Z stored_with_receipt=2/2 class=CLIENT_REPORTED_SERVER_RECEIPT_CHECKED independent_verification=NOT_ESTABLISHED
+SERVER_EVIDENCE UPLOADED - client_record.json 02df91531127341c145c04ed2d2821d2337552fb5c86dda981b5ab0120d021f8 + c2x_result.txt 7d13984cad9a9ce0230a59b0295de5dba0a34e71ef6d31ca83fb2bac27bf21ed stored with receipts (receipts 80692c1c211d93f1 ead072f83b88a299 ...)
+## 7 RESULT SUMMARY
+summary <PROJECT>/chain02/r2/missions/LGX-T2-QUOTE/RESULT_SUMMARY_LGX-T2-QUOTE-20261024T130334Z.md sha256 798eee2de416d831ef48b5e03b0f16bd51aa5ca9aaba893cd65282612d80af35 level CHAIN_VERIFIED_ACCEPTED_BY_B server_evidence UPLOADED
+EVIDENCE status=UPLOADED (client-reported; never part of the result status)
+RESULT status=PASS step=5 verdict=ALL_PASS chain=CHAIN_VERIFIED

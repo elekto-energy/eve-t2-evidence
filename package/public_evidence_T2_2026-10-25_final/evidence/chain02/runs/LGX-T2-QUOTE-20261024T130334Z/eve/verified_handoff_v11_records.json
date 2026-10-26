@@ -1,0 +1,210 @@
+{
+  "record_seq": 2,
+  "records": {
+    "EVE-VHR11-LOCAL-000001": {
+      "H": "3273d1df7d11ecf67fc104e5c34c4fead7923da72e8e7cb216780e6f135e32f4",
+      "admission_policy": {
+        "content_hash": "098c0e4f0305eb0fff7c0a31664586ccae28a1b04af6bd1f3ddc39d74be9663a",
+        "id": "057-L2-ADMISSION-POLICY",
+        "version": "test-local-1"
+      },
+      "created_at": "2026-10-24T13:05:27Z",
+      "facts": {
+        "binding_outcome": {
+          "source_field": "frame.binding_outcome",
+          "source_record_id": "EVE-DET-LOCAL-000001",
+          "value": "EXACT_MATCH"
+        },
+        "conclusion": {
+          "source_field": "frame.conclusion",
+          "source_record_id": "EVE-DET-LOCAL-000001",
+          "value": "handled_corroborated"
+        },
+        "handling_status": {
+          "source_field": "axes.handling_status",
+          "source_record_id": "EVE-DET-LOCAL-000001",
+          "value": "handled_corroborated"
+        }
+      },
+      "freshness": {
+        "clock_domain": "057-host-utc",
+        "expires_at": "2026-10-24T13:10:27Z",
+        "issued_at": "2026-10-24T13:05:27Z"
+      },
+      "handoff_version": "vhr-1.1",
+      "issuer": {
+        "issuer_class": "eve-d02-local-issuer"
+      },
+      "non_claims": [
+        "does_not_establish_legal_authority",
+        "does_not_establish_recipient_receipt",
+        "does_not_establish_recipient_comprehension",
+        "does_not_establish_recipient_compliance",
+        "does_not_execute_the_action",
+        "does_not_establish_policy_correctness",
+        "does_not_establish_completeness_of_underlying_evidence",
+        "does_not_establish_action_object_binding_beyond_declared_contract_refs",
+        "does_not_establish_issuer_authenticity_beyond_D-03",
+        "does_not_establish_artefact_source_authority"
+      ],
+      "prior_binding": {
+        "content_hash": "a750f8612ffb4611a8d89f541e48ef53d9839666bda61b1748def4c14e4f9495",
+        "manifest_hash": "73ce9cf24e2a878de383fae0fb6a70cd30118af7ca2f4171c0ab673d803002a2",
+        "record_id": "EVE-PAR-LOCAL-000001",
+        "record_schema_version": "par-1.2",
+        "reference_schema_version": "parref-1.0"
+      },
+      "recipient": {
+        "recipient_contract_h": null,
+        "recipient_id": "eve-agents-01/hermes-agent-a-1792514774354",
+        "role": "057_C2_HERMES_AGENT_A_WORKER",
+        "transport": {
+          "endpoint_id": "eve-agents-01/run_agent.sh",
+          "mode": "hermes-0.22.2-oneshot",
+          "model_id": "anthropic/claude-sonnet-5-5"
+        }
+      },
+      "record_id": "EVE-VHR11-LOCAL-000001",
+      "retry_of": null,
+      "scope": {
+        "expectation_ref": {
+          "content_hash": "f649ae39d0b554e4e19193c18fcb35a4b4f89e0f003b8034501c3594e4e32551",
+          "expectation_id": "057-L2-HE-C2-LGX-T2-QUOTE-20261024T130334Z-H1",
+          "state": "BOUND"
+        },
+        "fulfillment_contract_ref": {
+          "content_hash": "a94dcf8295ecd77027b60105266db0797fb230c4cda287ada5c3a06aa5604e5a",
+          "contract_id": "057-L2-FC-C2-LGX-T2-QUOTE-20261024T130334Z-H1",
+          "state": "BOUND"
+        },
+        "incompatibility_contract_ref": {
+          "state": "NOT_DECLARED"
+        },
+        "permitted_operation": null,
+        "sibling_role": "057-agent-b-handoff"
+      },
+      "seal": {
+        "content_hash": "a61f0a7e4dfc53cf1c04736231041e5fa6e93f1a47357fb2f7a6008386411dd1",
+        "manifest_hash": "045bbdc707e177f5fa7698334efabb6f132d2939483fde87518058c8467daac5",
+        "seal_id": "EVE-VHR11-LOCAL-000001",
+        "seal_mode": "local",
+        "sealed_at": "2026-10-24T13:05:27Z"
+      },
+      "source_policy_context": {
+        "policy_hash": "022392a4ae48f354bc15256038dfb725edd68947d2e1c2556293e96fc2f3b55d",
+        "policy_outcome": "TEST_LOCAL_057",
+        "policy_version": "057-l2-test-local-1"
+      },
+      "subject_ref": {
+        "content_hash": "3273d1df7d11ecf67fc104e5c34c4fead7923da72e8e7cb216780e6f135e32f4",
+        "det_schema_version": "det-1.1",
+        "determination_id": "EVE-DET-LOCAL-000001",
+        "manifest_hash": "2bb9d931d9c3a5f54ce4f5e0852ac84f58aa214050e46da03ea7790eb2df2082",
+        "subject_class": "EVE_DETERMINATION"
+      }
+    },
+    "EVE-VHR11-LOCAL-000002": {
+      "H": "594d73dc03d398c07df06a26162f0cbe403e0ab4a970905358b912a87d5b0d33",
+      "admission_policy": {
+        "content_hash": "098c0e4f0305eb0fff7c0a31664586ccae28a1b04af6bd1f3ddc39d74be9663a",
+        "id": "057-L2-ADMISSION-POLICY",
+        "version": "test-local-1"
+      },
+      "created_at": "2026-10-24T13:06:19Z",
+      "facts": {
+        "binding_outcome": {
+          "source_field": "frame.binding_outcome",
+          "source_record_id": "EVE-DET-LOCAL-000002",
+          "value": "EXACT_MATCH"
+        },
+        "conclusion": {
+          "source_field": "frame.conclusion",
+          "source_record_id": "EVE-DET-LOCAL-000002",
+          "value": "handled_corroborated"
+        },
+        "handling_status": {
+          "source_field": "axes.handling_status",
+          "source_record_id": "EVE-DET-LOCAL-000002",
+          "value": "handled_corroborated"
+        }
+      },
+      "freshness": {
+        "clock_domain": "057-host-utc",
+        "expires_at": "2026-10-24T13:11:19Z",
+        "issued_at": "2026-10-24T13:06:19Z"
+      },
+      "handoff_version": "vhr-1.1",
+      "issuer": {
+        "issuer_class": "eve-d02-local-issuer"
+      },
+      "non_claims": [
+        "does_not_establish_legal_authority",
+        "does_not_establish_recipient_receipt",
+        "does_not_establish_recipient_comprehension",
+        "does_not_establish_recipient_compliance",
+        "does_not_execute_the_action",
+        "does_not_establish_policy_correctness",
+        "does_not_establish_completeness_of_underlying_evidence",
+        "does_not_establish_action_object_binding_beyond_declared_contract_refs",
+        "does_not_establish_issuer_authenticity_beyond_D-03",
+        "does_not_establish_artefact_source_authority"
+      ],
+      "prior_binding": {
+        "content_hash": "a9f9fc8dc471bb354887a395bc281af9ee3043aa9a256eb369666f73301101f5",
+        "manifest_hash": "1a8969d4475accc3f85947114c6d21270b97efda01eb0894d17dbaabbaf5f274",
+        "record_id": "EVE-PAR-LOCAL-000001",
+        "record_schema_version": "par-1.2",
+        "reference_schema_version": "parref-1.0"
+      },
+      "recipient": {
+        "recipient_contract_h": null,
+        "recipient_id": "eve-agents-01/hermes-agent-b-1792514810156",
+        "role": "057_C2_HERMES_AGENT_B_REVIEWER",
+        "transport": {
+          "endpoint_id": "eve-agents-01/run_agent.sh",
+          "mode": "hermes-0.22.2-oneshot",
+          "model_id": "anthropic/claude-sonnet-5-5"
+        }
+      },
+      "record_id": "EVE-VHR11-LOCAL-000002",
+      "retry_of": null,
+      "scope": {
+        "expectation_ref": {
+          "content_hash": "9d20df3d61442d4f12ad8ce759b3adba8fce2838de96500e50f2b85179c50855",
+          "expectation_id": "057-L2-HE-C2-LGX-T2-QUOTE-20261024T130334Z-H2",
+          "state": "BOUND"
+        },
+        "fulfillment_contract_ref": {
+          "content_hash": "aa0b77c512ce2eb412b17239f6b6a43363b535636745f9a8470e8db3a0f34c15",
+          "contract_id": "057-L2-FC-C2-LGX-T2-QUOTE-20261024T130334Z-H2",
+          "state": "BOUND"
+        },
+        "incompatibility_contract_ref": {
+          "state": "NOT_DECLARED"
+        },
+        "permitted_operation": null,
+        "sibling_role": "057-agent-b-handoff"
+      },
+      "seal": {
+        "content_hash": "33c9da5b8c69d5a2f91e93840997e4d544ab94c349ecb8d68511d8b059619100",
+        "manifest_hash": "a723d69256b56b212bc34fd7df9de4374c943c2d0b059707935b4f61a3d78bd7",
+        "seal_id": "EVE-VHR11-LOCAL-000002",
+        "seal_mode": "local",
+        "sealed_at": "2026-10-24T13:06:19Z"
+      },
+      "source_policy_context": {
+        "policy_hash": "b8c5570af1ba39a80001bfe7acb974534f7b02a2e9a607cacc757a59a804676a",
+        "policy_outcome": "TEST_LOCAL_057",
+        "policy_version": "057-l2-test-local-1"
+      },
+      "subject_ref": {
+        "content_hash": "594d73dc03d398c07df06a26162f0cbe403e0ab4a970905358b912a87d5b0d33",
+        "det_schema_version": "det-1.1",
+        "determination_id": "EVE-DET-LOCAL-000002",
+        "manifest_hash": "9afbb6633fe496d1259a2a68228a05c78bf494343fdd354b9a13b680915023e4",
+        "subject_class": "EVE_DETERMINATION"
+      }
+    }
+  },
+  "store_schema_version": "1.0"
+}

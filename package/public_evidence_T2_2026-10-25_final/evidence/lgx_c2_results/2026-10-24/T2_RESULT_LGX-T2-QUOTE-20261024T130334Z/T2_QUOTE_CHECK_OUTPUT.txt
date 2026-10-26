@@ -1,0 +1,5 @@
+QUOTE_CHECK PASS Q1_task_and_price_list=ok Q2_files_present=ok Q3_csv_structure_and_quantities=ok Q4_unit_prices=ok Q5_line_totals=ok Q6_summary_rows=ok Q7_offer_draft_marker_and_totals=ok Q8_unpriced_requests_named=ok
+QUOTE_CHECK computed subtotal 77090.00 vat 19272.50 total 96362.50
+QUOTE_CHECK reviewer_b VERDICT: ACCEPT (reported; not part of the deterministic result)
+RESULT QUOTE_CHECK DETERMINISTIC_PASS
+rc=0

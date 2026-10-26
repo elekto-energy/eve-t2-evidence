@@ -1,0 +1,419 @@
+{
+ "format": "EVE_PUBLICATION_MANIFEST_V1",
+ "package": "public_evidence_T2_2026-10-25_final",
+ "state": "FINAL LOCAL PACKAGE - NOT PUBLISHED (separate owner GO required)",
+ "supersedes_candidate": "public_evidence_T2_2026-10-25 (local candidate; not distributed; kept unchanged)",
+ "original_manifest": {
+  "path": "original/LGX_C2_T2_EVIDENCE_FREEZE_2026-10-24.md",
+  "sha256": "f9468fd311a83be92daa0bb0fd013139d0feb5957124e517edce7ccf746d8fef",
+  "bytes": 8833,
+  "status": "BYTE_IDENTICAL_COPY_OF_THE_FROZEN_MANIFEST"
+ },
+ "status_vocabulary": {
+  "ORIGINAL_UNCHANGED": "distributed byte-identical; checkable against the original manifest",
+  "WITHHELD_SECURITY_METADATA": "not distributed: security-relevant operational metadata; original unchanged in the frozen chain",
+  "WITHHELD_READING_COPY_DISTRIBUTED": "original not distributed; a redacted reading copy (NOT evidence) is distributed instead",
+  "WITHHELD": "not distributed; original unchanged in the frozen chain"
+ },
+ "counts": {
+  "ORIGINAL_UNCHANGED": 39,
+  "WITHHELD": 6,
+  "WITHHELD_READING_COPY_DISTRIBUTED": 2,
+  "WITHHELD_SECURITY_METADATA": 1
+ },
+ "files": [
+  {
+   "original_path": "LGX_C2_T2_RESULT_2026-10-24.md",
+   "original_sha256": "0df6fa4a6570a7fbebfa293cdaa3da9944f8fb9ff3035bf29f795ab65db131e2",
+   "original_bytes": 5834,
+   "package_status": "WITHHELD_SECURITY_METADATA",
+   "reason": "main result record: server firewall state after rollback (line 32) and signing-attempt detail (lines 33-34); kept unchanged in the frozen chain (owner decision 2026-10-25)"
+  },
+  {
+   "original_path": "chain02\\runs\\LGX-T2-QUOTE-20261024T130334Z\\out\\H1\\a_out\\OFFER_DRAFT.md",
+   "original_sha256": "14215d27c8bc6e77d23d19f647c3bcb21a5393b1ceb9b4e818eeb06c4b679af4",
+   "original_bytes": 1241,
+   "package_status": "ORIGINAL_UNCHANGED",
+   "package_path": "evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/out/H1/a_out/OFFER_DRAFT.md"
+  },
+  {
+   "original_path": "chain02\\runs\\LGX-T2-QUOTE-20261024T130334Z\\out\\H1\\a_out\\CALCULATION.csv",
+   "original_sha256": "d9cab3dbcdc46d9c5cdec06f309687f0c719f41a31a2073c4de918df278108ea",
+   "original_bytes": 548,
+   "package_status": "ORIGINAL_UNCHANGED",
+   "package_path": "evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/out/H1/a_out/CALCULATION.csv"
+  },
+  {
+   "original_path": "chain02\\runs\\LGX-T2-QUOTE-20261024T130334Z\\out\\H1\\a_out\\ASSUMPTIONS_AND_QUESTIONS.md",
+   "original_sha256": "19745abb6f7cea32365763c3e26a15233af38e444b2cd0d595447a241298ae66",
+   "original_bytes": 1274,
+   "package_status": "ORIGINAL_UNCHANGED",
+   "package_path": "evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/out/H1/a_out/ASSUMPTIONS_AND_QUESTIONS.md"
+  },
+  {
+   "original_path": "chain02\\runs\\LGX-T2-QUOTE-20261024T130334Z\\out\\H1\\a_out\\RESULT.md",
+   "original_sha256": "b1eaa62787f9537bfd14f60c8840eb11b3ef92472fefd8f27bb2802e7bced935",
+   "original_bytes": 480,
+   "package_status": "ORIGINAL_UNCHANGED",
+   "package_path": "evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/out/H1/a_out/RESULT.md"
+  },
+  {
+   "original_path": "chain02\\runs\\LGX-T2-QUOTE-20261024T130334Z\\out\\H1\\A_OUT_MANIFEST.sha256",
+   "original_sha256": "aa7a7e47f2f94bab1debba3a0c0e715a703c7d754e4c022965fde0dc1f7ee4e9",
+   "original_bytes": 334,
+   "package_status": "ORIGINAL_UNCHANGED",
+   "package_path": "evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/out/H1/A_OUT_MANIFEST.sha256"
+  },
+  {
+   "original_path": "chain02\\runs\\LGX-T2-QUOTE-20261024T130334Z\\out\\H1\\a_out.tar",
+   "original_sha256": "ae09e4040f52846890e8ed44190172b76255a0ce0f2369bf99950354152ffae5",
+   "original_bytes": 10240,
+   "package_status": "ORIGINAL_UNCHANGED",
+   "package_path": "evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/out/H1/a_out.tar"
+  },
+  {
+   "original_path": "chain02\\runs\\LGX-T2-QUOTE-20261024T130334Z\\out\\H2\\a_out\\REVIEW.md",
+   "original_sha256": "16537de90f879dc8c8fde34e7bfb1a2051a1b590bbfa2b99e71104e065afbcb6",
+   "original_bytes": 1420,
+   "package_status": "ORIGINAL_UNCHANGED",
+   "package_path": "evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/out/H2/a_out/REVIEW.md"
+  },
+  {
+   "original_path": "chain02\\runs\\LGX-T2-QUOTE-20261024T130334Z\\out\\H2\\A_OUT_MANIFEST.sha256",
+   "original_sha256": "c0042cc960159fd1b217c6a13aba76c1199f20ad7f7c023c1969f39f0feb3dfa",
+   "original_bytes": 76,
+   "package_status": "ORIGINAL_UNCHANGED",
+   "package_path": "evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/out/H2/A_OUT_MANIFEST.sha256"
+  },
+  {
+   "original_path": "chain02\\runs\\LGX-T2-QUOTE-20261024T130334Z\\out\\H2\\a_out.tar",
+   "original_sha256": "9145faa2828d8899be1fe1cc34fd5e9a01d70ca7f375f74f7f5f47d5333daae8",
+   "original_bytes": 10240,
+   "package_status": "ORIGINAL_UNCHANGED",
+   "package_path": "evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/out/H2/a_out.tar"
+  },
+  {
+   "original_path": "chain02\\r2\\missions\\LGX-T2-QUOTE\\MANDATE_LGX-T2-QUOTE-20261024T130334Z.txt",
+   "original_sha256": "4494612f489fb858780906075880900e51181a564d2648be277bca68f942eaab",
+   "original_bytes": 816,
+   "package_status": "ORIGINAL_UNCHANGED",
+   "package_path": "evidence/chain02/r2/missions/LGX-T2-QUOTE/MANDATE_LGX-T2-QUOTE-20261024T130334Z.txt"
+  },
+  {
+   "original_path": "chain02\\r2\\missions\\LGX-T2-QUOTE\\MANDATE_LGX-T2-QUOTE-20261024T130334Z.txt.sig",
+   "original_sha256": "633bee9a64969a0bb72fb83b76227884d4aa6265a68dd23287efda9baea13338",
+   "original_bytes": 310,
+   "package_status": "ORIGINAL_UNCHANGED",
+   "package_path": "evidence/chain02/r2/missions/LGX-T2-QUOTE/MANDATE_LGX-T2-QUOTE-20261024T130334Z.txt.sig"
+  },
+  {
+   "original_path": "chain02\\r2\\lgx_c2\\T2\\T2_OWNER_GO_RECORD.md",
+   "original_sha256": "88e70d0fe04cad9b1ebc8fa04e79ce97f6b9c932972a614eb2648a6bbfb64b43",
+   "original_bytes": 1765,
+   "package_status": "ORIGINAL_UNCHANGED",
+   "package_path": "evidence/chain02/r2/lgx_c2/T2/T2_OWNER_GO_RECORD.md"
+  },
+  {
+   "original_path": "chain02\\r2\\lgx_c2\\activations\\N3R3_ACT_654226842f988bd162a0fcc5add09b152360aac446f77a8ad39e65b47614bc77.md",
+   "original_sha256": "654226842f988bd162a0fcc5add09b152360aac446f77a8ad39e65b47614bc77",
+   "original_bytes": 1119,
+   "package_status": "ORIGINAL_UNCHANGED",
+   "package_path": "evidence/chain02/r2/lgx_c2/activations/N3R3_ACT_654226842f988bd162a0fcc5add09b152360aac446f77a8ad39e65b47614bc77.md"
+  },
+  {
+   "original_path": "chain02\\r2\\lgx_c2\\activations\\consumed\\654226842f988bd162a0fcc5add09b152360aac446f77a8ad39e65b47614bc77\\CONSUMED.txt",
+   "original_sha256": "43e2d5a159aa1080909a7fcff1c3af62b7392bd9e173deb84ec154621c9d1e27",
+   "original_bytes": 164,
+   "package_status": "ORIGINAL_UNCHANGED",
+   "package_path": "evidence/chain02/r2/lgx_c2/activations/consumed/654226842f988bd162a0fcc5add09b152360aac446f77a8ad39e65b47614bc77/CONSUMED.txt"
+  },
+  {
+   "original_path": "chain02\\r2\\lgx_c2\\RUN_TASK_LGX_WSL_r4_T2.sh",
+   "original_sha256": "1c945f698397984cb8619eb662160cfdbf6f4dbfc7f84f6de2bd457e7f3ee510",
+   "original_bytes": 40199,
+   "package_status": "WITHHELD",
+   "reason": "server addresses / owner environment / container topology and egress results (owner decision 2026-10-25)"
+  },
+  {
+   "original_path": "chain02\\r2\\missions\\LGX-T2-QUOTE\\TASK.md",
+   "original_sha256": "6d575090fcbfa47a8d050087a3ae93706aae20e8e81659367a03dd4b054c431d",
+   "original_bytes": 4121,
+   "package_status": "ORIGINAL_UNCHANGED",
+   "package_path": "evidence/chain02/r2/missions/LGX-T2-QUOTE/TASK.md"
+  },
+  {
+   "original_path": "chain02\\r2\\missions\\LGX-T2-QUOTE\\MISSION_HOLD_LIFT.md",
+   "original_sha256": "456652d461549fe1c59e64ea56ec3371bf3d0bf585899f285e363326973338a7",
+   "original_bytes": 2525,
+   "package_status": "ORIGINAL_UNCHANGED",
+   "package_path": "evidence/chain02/r2/missions/LGX-T2-QUOTE/MISSION_HOLD_LIFT.md"
+  },
+  {
+   "original_path": "chain02\\r2\\lgx_c2\\T2\\T2_SPEC.md",
+   "original_sha256": "8965d91e25e36deb26272ab2d9d4b39b9c8a933f73200b8c5a6ae0b5e3cbd00d",
+   "original_bytes": 9503,
+   "package_status": "WITHHELD_READING_COPY_DISTRIBUTED",
+   "reading_copy": "reading_copies/T2_SPEC.READING_COPY_r2.md",
+   "reason": "agent container network / toolset configuration and a service name; distributed only as a redacted reading copy (owner decision 2026-10-25)"
+  },
+  {
+   "original_path": "chain02\\r2\\missions\\LGX-T2-QUOTE\\RUN_LGX-T2-QUOTE-20261024T130334Z.txt",
+   "original_sha256": "22d43e5cd4e797ffd4dd2e38dd66e1b7117aa6042a81950841319dfb9ea2b627",
+   "original_bytes": 12364,
+   "package_status": "WITHHELD_READING_COPY_DISTRIBUTED",
+   "reading_copy": "reading_copies/RUN_LGX-T2-QUOTE-20261024T130334Z.READING_COPY.txt",
+   "reason": "local key file paths and signing-attempt detail; distributed only as a redacted reading copy (owner decision 2026-10-25)"
+  },
+  {
+   "original_path": "chain02\\runs\\C2-live-LGX-T2-QUOTE-20261024T130334Z.json",
+   "original_sha256": "02df91531127341c145c04ed2d2821d2337552fb5c86dda981b5ab0120d021f8",
+   "original_bytes": 16566,
+   "package_status": "ORIGINAL_UNCHANGED",
+   "package_path": "evidence/chain02/runs/C2-live-LGX-T2-QUOTE-20261024T130334Z.json"
+  },
+  {
+   "original_path": "chain02\\runs\\LGX-T2-QUOTE-20261024T130334Z\\link\\LINK.json",
+   "original_sha256": "3615753028856a239db86badf96dd9fa98f19c4f97d0cab59362d772e7d826b5",
+   "original_bytes": 748,
+   "package_status": "ORIGINAL_UNCHANGED",
+   "package_path": "evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/link/LINK.json"
+  },
+  {
+   "original_path": "chain02\\runs\\LGX-T2-QUOTE-20261024T130334Z\\server_io.log",
+   "original_sha256": "0f2d3024edf8d7d24594af3c8cb27617b68183553b57a2dc1f42466f088daa4e",
+   "original_bytes": 4820,
+   "package_status": "ORIGINAL_UNCHANGED",
+   "package_path": "evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/server_io.log"
+  },
+  {
+   "original_path": "chain02\\runs\\LGX-T2-QUOTE-20261024T130334Z\\pkg\\H1\\MANIFEST.sha256",
+   "original_sha256": "d90a7154f85f33c936b44f8ed4d4de375c603d0488ab9317cb547ca4645a06a1",
+   "original_bytes": 159,
+   "package_status": "ORIGINAL_UNCHANGED",
+   "package_path": "evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/pkg/H1/MANIFEST.sha256"
+  },
+  {
+   "original_path": "chain02\\runs\\LGX-T2-QUOTE-20261024T130334Z\\pkg\\H1\\package.tar",
+   "original_sha256": "7dafc199d898d01b0af7b4f39888c12f230a07c23deac15966446968f3e5dd60",
+   "original_bytes": 10240,
+   "package_status": "ORIGINAL_UNCHANGED",
+   "package_path": "evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/pkg/H1/package.tar"
+  },
+  {
+   "original_path": "chain02\\runs\\LGX-T2-QUOTE-20261024T130334Z\\pkg\\H2\\MANIFEST.sha256",
+   "original_sha256": "1213a9dd1b2264806154b6c5d7253a89dec97d6113ca0b84c882f45a2b405e77",
+   "original_bytes": 597,
+   "package_status": "ORIGINAL_UNCHANGED",
+   "package_path": "evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/pkg/H2/MANIFEST.sha256"
+  },
+  {
+   "original_path": "chain02\\runs\\LGX-T2-QUOTE-20261024T130334Z\\pkg\\H2\\package.tar",
+   "original_sha256": "78c783cc91735d800fca7c100e06cc10f4ee96662424c7a627222bc82c26472b",
+   "original_bytes": 20480,
+   "package_status": "ORIGINAL_UNCHANGED",
+   "package_path": "evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/pkg/H2/package.tar"
+  },
+  {
+   "original_path": "chain02\\runs\\LGX-T2-QUOTE-20261024T130334Z\\consumed\\79abb1472f4dd56ef9e97decaa11dac7e63df41a62e173db9e447ff1b168408d.json",
+   "original_sha256": "5e1cabb02689f79c2719f830edde1efa2a1ffb7c86931f3f1556623bf09f523d",
+   "original_bytes": 254,
+   "package_status": "ORIGINAL_UNCHANGED",
+   "package_path": "evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/consumed/79abb1472f4dd56ef9e97decaa11dac7e63df41a62e173db9e447ff1b168408d.json"
+  },
+  {
+   "original_path": "chain02\\runs\\LGX-T2-QUOTE-20261024T130334Z\\consumed\\9d9b85ef0e27f94727e78fb39dd0f120c667673c9c4db89d5effc4256330de65.json",
+   "original_sha256": "ac53b4fffd6d467b86c75ec03f20be947fa57b344c07fe1bf382d9b4c174cc17",
+   "original_bytes": 254,
+   "package_status": "ORIGINAL_UNCHANGED",
+   "package_path": "evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/consumed/9d9b85ef0e27f94727e78fb39dd0f120c667673c9c4db89d5effc4256330de65.json"
+  },
+  {
+   "original_path": "chain02\\runs\\LGX-T2-QUOTE-20261024T130334Z\\eve\\determination_records.json",
+   "original_sha256": "119e89d64e7a50e0abe5e96a42d18dad5a43a27e0fd780d74594cf3f746938eb",
+   "original_bytes": 11499,
+   "package_status": "ORIGINAL_UNCHANGED",
+   "package_path": "evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/eve/determination_records.json"
+  },
+  {
+   "original_path": "chain02\\runs\\LGX-T2-QUOTE-20261024T130334Z\\eve\\verified_handoff_v11_records.json",
+   "original_sha256": "4860f171e6e2081d8da9008d00c71fc240611e3c789f32ed6c37b796b50b942f",
+   "original_bytes": 8407,
+   "package_status": "ORIGINAL_UNCHANGED",
+   "package_path": "evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/eve/verified_handoff_v11_records.json"
+  },
+  {
+   "original_path": "chain02\\runs\\LGX-T2-QUOTE-20261024T130334Z\\executor\\intents\\EVE-VHR11-LOCAL-000001.json",
+   "original_sha256": "8fee17d4a5d70aba3490ca50af31014da8c55e6234c21539c82a6ce189b51f04",
+   "original_bytes": 1217,
+   "package_status": "ORIGINAL_UNCHANGED",
+   "package_path": "evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/executor/intents/EVE-VHR11-LOCAL-000001.json"
+  },
+  {
+   "original_path": "chain02\\runs\\LGX-T2-QUOTE-20261024T130334Z\\executor\\intents\\EVE-VHR11-LOCAL-000002.json",
+   "original_sha256": "c118560d2f90f395a548c1755b9727306601361eacbad929ca6a3107e0270877",
+   "original_bytes": 1219,
+   "package_status": "ORIGINAL_UNCHANGED",
+   "package_path": "evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/executor/intents/EVE-VHR11-LOCAL-000002.json"
+  },
+  {
+   "original_path": "chain02\\runs\\LGX-T2-QUOTE-20261024T130334Z\\executor\\journals\\EVE-VHR11-LOCAL-000001.jsonl",
+   "original_sha256": "9dae2b0e3f61c821b26ea26944000d795c491cb47e3b44ac57f51f9b907541a3",
+   "original_bytes": 1116,
+   "package_status": "ORIGINAL_UNCHANGED",
+   "package_path": "evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/executor/journals/EVE-VHR11-LOCAL-000001.jsonl"
+  },
+  {
+   "original_path": "chain02\\runs\\LGX-T2-QUOTE-20261024T130334Z\\executor\\journals\\EVE-VHR11-LOCAL-000002.jsonl",
+   "original_sha256": "d352fbfb6ec8bed57d066df158ab66061f07b294c2546626eadfdc9a5a3d0083",
+   "original_bytes": 1116,
+   "package_status": "ORIGINAL_UNCHANGED",
+   "package_path": "evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/executor/journals/EVE-VHR11-LOCAL-000002.jsonl"
+  },
+  {
+   "original_path": "chain02\\runs\\LGX-T2-QUOTE-20261024T130334Z\\executor\\outcomes\\EVE-VHR11-LOCAL-000001.json",
+   "original_sha256": "61e49717c5fe1e0d8960be2a5e448a776d6e7019d11d4db381e1ac42faedc6a7",
+   "original_bytes": 340,
+   "package_status": "ORIGINAL_UNCHANGED",
+   "package_path": "evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/executor/outcomes/EVE-VHR11-LOCAL-000001.json"
+  },
+  {
+   "original_path": "chain02\\runs\\LGX-T2-QUOTE-20261024T130334Z\\executor\\outcomes\\EVE-VHR11-LOCAL-000002.json",
+   "original_sha256": "abd8b98053dd7cad67cba9ce3e65c97abf0cfa457fe0b867f973500dd97f71c0",
+   "original_bytes": 340,
+   "package_status": "ORIGINAL_UNCHANGED",
+   "package_path": "evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/executor/outcomes/EVE-VHR11-LOCAL-000002.json"
+  },
+  {
+   "original_path": "chain02\\runs\\LGX-T2-QUOTE-20261024T130334Z\\executor\\reservations\\EVE-VHR11-LOCAL-000001.json",
+   "original_sha256": "c7c1735eaa2028266316eb3221ab997d7278aeaa403ba24abc73bb4878b16cea",
+   "original_bytes": 131,
+   "package_status": "ORIGINAL_UNCHANGED",
+   "package_path": "evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/executor/reservations/EVE-VHR11-LOCAL-000001.json"
+  },
+  {
+   "original_path": "chain02\\runs\\LGX-T2-QUOTE-20261024T130334Z\\executor\\reservations\\EVE-VHR11-LOCAL-000002.json",
+   "original_sha256": "2ca91bacb29d33093e155cc45a86d410cdf7bc07c674d2c8bfd681e862ade18d",
+   "original_bytes": 131,
+   "package_status": "ORIGINAL_UNCHANGED",
+   "package_path": "evidence/chain02/runs/LGX-T2-QUOTE-20261024T130334Z/executor/reservations/EVE-VHR11-LOCAL-000002.json"
+  },
+  {
+   "original_path": "chain02\\r2\\missions\\LGX-T2-QUOTE\\C2X_RESULT_LGX-T2-QUOTE-20261024T130334Z.txt",
+   "original_sha256": "7d13984cad9a9ce0230a59b0295de5dba0a34e71ef6d31ca83fb2bac27bf21ed",
+   "original_bytes": 937,
+   "package_status": "ORIGINAL_UNCHANGED",
+   "package_path": "evidence/chain02/r2/missions/LGX-T2-QUOTE/C2X_RESULT_LGX-T2-QUOTE-20261024T130334Z.txt"
+  },
+  {
+   "original_path": "chain02\\r2\\missions\\LGX-T2-QUOTE\\RESULT_SUMMARY_LGX-T2-QUOTE-20261024T130334Z.md",
+   "original_sha256": "798eee2de416d831ef48b5e03b0f16bd51aa5ca9aaba893cd65282612d80af35",
+   "original_bytes": 3880,
+   "package_status": "ORIGINAL_UNCHANGED",
+   "package_path": "evidence/chain02/r2/missions/LGX-T2-QUOTE/RESULT_SUMMARY_LGX-T2-QUOTE-20261024T130334Z.md"
+  },
+  {
+   "original_path": "lgx_c2_results\\2026-10-24\\T2_RESULT_LGX-T2-QUOTE-20261024T130334Z\\T2_QUOTE_CHECK_OUTPUT.txt",
+   "original_sha256": "57fd0ff294624ee075c03a74c54c55a498f4df27ab799469fb851ddaf27615b5",
+   "original_bytes": 417,
+   "package_status": "ORIGINAL_UNCHANGED",
+   "package_path": "evidence/lgx_c2_results/2026-10-24/T2_RESULT_LGX-T2-QUOTE-20261024T130334Z/T2_QUOTE_CHECK_OUTPUT.txt"
+  },
+  {
+   "original_path": "chain02\\r2\\lgx_c2\\T2\\T2_QUOTE_CHECK.py",
+   "original_sha256": "67d8184ceaf8f49843869f0ad11c0de339a504c66e474f532a37bf47b1243deb",
+   "original_bytes": 6153,
+   "package_status": "ORIGINAL_UNCHANGED",
+   "package_path": "evidence/chain02/r2/lgx_c2/T2/T2_QUOTE_CHECK.py"
+  },
+  {
+   "original_path": "chain02\\r2\\h2\\H2_CHANGE_20261024T125556Z.txt",
+   "original_sha256": "7dc8b691cf4792977f612478ec1e89cc3e1a599084489aedaac0c379bd1da732",
+   "original_bytes": 6189,
+   "package_status": "WITHHELD",
+   "reason": "server addresses / owner environment / container topology and egress results (owner decision 2026-10-25)"
+  },
+  {
+   "original_path": "chain02\\r2\\h2\\H2K_CHECK_20261024T125801Z.txt",
+   "original_sha256": "42f341a14853e69da81945999df3ea3c9840b30ce34ea5d742c834e7d8295f90",
+   "original_bytes": 1379,
+   "package_status": "WITHHELD",
+   "reason": "server addresses / owner environment / container topology and egress results (owner decision 2026-10-25)"
+  },
+  {
+   "original_path": "chain02\\r2\\h2\\H2_CANARY_T2_20261024T130725Z.txt",
+   "original_sha256": "994426b386f342d887f5908a5c3fb4cf36917d853a7d42fd137682827438a0b0",
+   "original_bytes": 747,
+   "package_status": "WITHHELD",
+   "reason": "server addresses / owner environment / container topology and egress results (owner decision 2026-10-25)"
+  },
+  {
+   "original_path": "chain02\\r2\\h2\\H2_ROLLBACK_20261024T130828Z.txt",
+   "original_sha256": "71d820e15cfd6dcd2bec12735a49fdb06921af5f21e5a3aaf28d410e21f108f0",
+   "original_bytes": 3796,
+   "package_status": "WITHHELD",
+   "reason": "server addresses / owner environment / container topology and egress results (owner decision 2026-10-25)"
+  },
+  {
+   "original_path": "lgx_c2_results\\2026-10-24\\T2_PRECHECK_20261024T125552Z\\T2_PRECHECK_LOG.txt",
+   "original_sha256": "ebc9a629d0fd17c577efb28406da7447410a51618e789233a6959cd380a070a0",
+   "original_bytes": 3193,
+   "package_status": "WITHHELD",
+   "reason": "environment fingerprint: WSL user and home, distro, local tool binary hashes (owner decision 2026-10-25)"
+  }
+ ],
+ "reading_copies": [
+  {
+   "path": "reading_copies/RUN_LGX-T2-QUOTE-20261024T130334Z.READING_COPY.txt",
+   "own_sha256": "9a4de69006dc316fd511abff245644a1e49d3aff905a9387c901de9cf0edd096",
+   "own_bytes": 12681,
+   "derived_from": "chain02\\r2\\missions\\LGX-T2-QUOTE\\RUN_LGX-T2-QUOTE-20261024T130334Z.txt",
+   "derived_from_sha256": "22d43e5cd4e797ffd4dd2e38dd66e1b7117aa6042a81950841319dfb9ea2b627",
+   "approved_candidate_sha256": "b23f27b11ede965d12441da1145f60c85de15a05965ae7613c84a0f8db3fe558",
+   "difference_to_approved_candidate": "banner line 6 only (status text); lines 7 onward byte-identical",
+   "status": "READING_COPY_NOT_EVIDENCE",
+   "rule": "derived, redacted reading copy; NOT evidence; never carries or replaces the original sha256; not checkable against the frozen manifest"
+  },
+  {
+   "path": "reading_copies/T2_SPEC.READING_COPY_r2.md",
+   "own_sha256": "fca0833c59f92f7d4004e7df4f0edfac7a3bca32a5629aaf7d1f68eec84d9406",
+   "own_bytes": 9945,
+   "derived_from": "chain02\\r2\\lgx_c2\\T2\\T2_SPEC.md",
+   "derived_from_sha256": "8965d91e25e36deb26272ab2d9d4b39b9c8a933f73200b8c5a6ae0b5e3cbd00d",
+   "approved_candidate_sha256": "ec672ec9869f076eb22dec2f0b39580b63e09f8e9a4ca6c6e76248000499999b",
+   "difference_to_approved_candidate": "banner line 6 only (status text); lines 7 onward byte-identical",
+   "status": "READING_COPY_NOT_EVIDENCE",
+   "rule": "derived, redacted reading copy; NOT evidence; never carries or replaces the original sha256; not checkable against the frozen manifest"
+  }
+ ],
+ "support_files": [
+  {
+   "path": "README.md",
+   "sha256": "f6fe1115baa59db2b5f0b0755704d9ff1346ef94d8628be4fc8889bc9fc1b493",
+   "bytes": 4755,
+   "role": "scope, limits, how to check"
+  },
+  {
+   "path": "VERIFY_PACKAGE.py",
+   "sha256": "a7175db1264d5fc16344eb3597a333bf3d8f227ed06e970b769b94fcc4f7226e",
+   "bytes": 3912,
+   "role": "integrity check (original / withheld / reading copy / unlisted)"
+  },
+  {
+   "path": "g1/G1_CHECK.sh",
+   "sha256": "8d7e6f9e81164585291c08554a3d1063bea18f44ae18a9aadb67893ea0a8afa9",
+   "bytes": 2738,
+   "role": "prepared mandate signature check - NOT RUN"
+  }
+ ],
+ "verification_status": {
+  "G-1": "NOT_PERFORMED (mandate signature not yet checked against an owner-supplied public key)",
+  "G-2": "NOT_RESOLVED (client, server script and verifier pinned in the mandate are not distributed)",
+  "L-5": "NOT_ESTABLISHED",
+  "not_claimed": [
+   "independent verification",
+   "full reproducibility",
+   "external audit",
+   "certification"
+  ]
+ }
+}
